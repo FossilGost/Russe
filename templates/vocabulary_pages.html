@@ -1,0 +1,5 @@
+{% if pages>1 %}<nav class="vocabulary-pages" aria-label="Pages du carnet">
+  {% if page>1 %}<a class="button outline" href="{{ url_for('vocabulary',q=query,category=category,status=status,page=page-1) }}">← Précédent</a>{% endif %}
+  <span>Page {{ page }} / {{ pages }} · mots {{ offset+1 }} à {{ offset+words|length }}</span>
+  {% if page<pages %}<a class="button outline" href="{{ url_for('vocabulary',q=query,category=category,status=status,page=page+1) }}">Suivant →</a>{% endif %}
+</nav>{% endif %}

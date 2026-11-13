@@ -1,0 +1,47 @@
+{% extends 'practice_fragment.html' if request.headers.get('X-Slovo-Transition')=='1' else 'base.html' %}
+{% from 'illustration.html' import illustrate with context %}
+{% set listening = question.kind in ('dictation', 'listen_quiz') %}
+{% macro language_badge(language) -%}
+<span class="language-badge"><i class="language-flag flag-{{ language }}" aria-hidden="true"></i>{{ 'Russe' if language=='ru' else 'Français' }}</span>
+{%- endmacro %}
+{% block title %}{{ modes[run.mode] }}{% endblock %}
+{% block content %}
+<div class="practice-top"><a href="{{ url_for('home') }}" class="subtle-link">✕ Quitter la session</a><span>{{ modes[run.mode] }}{% if run.category %} · {{ run.category }}{% endif %}</span><strong>✦ {{ run.xp }} XP</strong></div>
+<div class="session-progress"><div class="progress-track"><span style="width:{{ (run.position + (1 if feedback else 0))/length*100 }}%"></span></div><span>{{ run.position+1 }} / {{ length }}</span></div>
+<p id="practice-status" class="tiny practice-status" role="status" aria-live="polite"></p>
+<section class="practice-card">
+  <div class="practice-meta"><span class="category-pill">{{ 'Écoute en russe' if listening and not feedback else word.category }}</span><span class="tiny">{{ '🔥 Série de ' ~ run.combo if run.combo>=2 else 'À chaque mot, un progrès' }}</span></div>
+  <p class="eyebrow">{{ 'ÉCRIS CE QUE TU ENTENDS' if question.kind=='dictation' else ('CHOISIS LE MOT ENTENDU' if question.kind=='listen_quiz' else ('TROUVE LA BONNE TRADUCTION' if question.kind=='quiz' else ('ÉCRIS CE MOT EN RUSSE' if question.kind=='type' else 'OBSERVE ET RECOPIE LE MOT'))) }}</p>
+  {% if listening and not feedback %}
+  <div class="listening-prompt"><span class="listening-symbol" aria-hidden="true">🎧</span><h1>{{ 'À ton oreille de jouer' if question.kind=='listen_quiz' else 'Écoute, puis écris en russe' }}</h1><div class="speech-actions">
+  {% for rate, label in [('normal','Écouter'),('slow','Écouter lentement')] %}<button type="button" class="listen-button" data-speak="" data-audio-url="{{ url_for('audio',word_id=word.id) }}" data-listening-text-url="{{ url_for('listening_text',run_id=run.id,position=run.position) }}" {% if rate=='slow' %}data-speech-rate="slow"{% else %}data-auto-listen="1"{% endif %}>{{ label }}</button>{% endfor %}</div><p class="input-help">Tu peux réécouter autant de fois que tu veux.</p></div>
+  {% else %}
+  <div class="word-pair">
+    <div class="word-row">
+      <div class="word-content">{{ language_badge('fr' if question.kind=='type' else 'ru') }}<h1 class="question-word" lang="{{ 'fr' if question.kind=='type' else 'ru' }}">{{ word.fr if question.kind=='type' else word.ru }}</h1></div>
+      {% if question.kind!='type' or feedback %}<div class="speech-actions"><button type="button" class="listen-button" data-speak="{{ word.ru }}" data-audio-url="{{ url_for('audio',word_id=word.id) }}" {% if feedback %}data-auto-speak="{{ run.id }}:{{ run.position }}"{% endif %} aria-label="Écouter le mot russe"><span aria-hidden="true">◖))</span> Écouter</button><button type="button" class="listen-button" data-speak="{{ word.ru }}" data-audio-url="{{ url_for('audio',word_id=word.id) }}" data-speech-rate="slow" aria-label="Écouter lentement le mot russe"><span aria-hidden="true">◷</span> Écouter lentement</button></div>{% endif %}
+    </div>
+    {% if question.kind=='copy' %}<div class="word-row word-translation"><div class="word-content">{{ language_badge('fr') }}<strong lang="fr">{{ word.fr }}</strong></div></div>{% endif %}
+  </div>
+  {% endif %}
+  {% if feedback or question.kind=='copy' %}{{ illustrate(word, true) }}{% endif %}
+  {% if not feedback %}
+  <form action="{{ url_for('answer') }}" method="post" id="answer-form" data-check-url="{{ url_for('check_answer') }}"><input type="hidden" name="csrf" value="{{ csrf_token }}"><input type="hidden" name="run_id" value="{{ run.id }}"><input type="hidden" name="position" value="{{ run.position }}">
+    {% if question.kind in ('quiz', 'listen_quiz') %}<div class="answer-language">{{ language_badge('ru' if listening else 'fr') }}<span>{{ 'Choisis le mot entendu · touches 1 à 4 puis Entrée' if listening else 'Choisis la traduction' }}</span></div><div class="choices">{% for option in question.options %}<label class="choice"><input type="radio" name="answer" value="{{ option }}" required><span class="choice-number">{{ loop.index }}</span><span lang="{{ 'ru' if listening else 'fr' }}">{{ option }}</span><span class="choice-check">✓</span></label>{% endfor %}</div>
+    {% else %}<p id="writing-status" class="input-help" role="status">Validation automatique &middot; Entr&eacute;e pour valider ou passer.</p><label for="russian-input" class="input-label">{{ language_badge("ru") }}<span>Ta réponse en cyrillique</span></label><input id="russian-input" name="answer" class="russian-input" type="text" lang="ru" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Écris ici…" autofocus maxlength="500"><p class="input-help">L’accent tonique et la ponctuation sont facultatifs. {{ 'е et ё sont distingués.' if profile.strict else 'е est accepté à la place de ё.' }}</p><details class="keyboard-wrap"><summary>⌨ Clavier russe</summary><div class="keyboard">{% for row in ['йцукенгшщзхъ','фывапролджэ','ячсмитьбюё'] %}<div class="key-row">{% for letter in row %}<button type="button" data-key="{{ letter }}">{{ letter }}</button>{% endfor %}</div>{% endfor %}<div class="key-row"><button type="button" data-key=" " class="space-key">espace</button><button type="button" data-key="backspace" aria-label="Effacer le caractère précédent">⌫</button></div></div></details>{% endif %}
+    <div class="answer-bottom"><span class="tiny">{{ 'Une seule bonne réponse' if question.kind in ('quiz', 'listen_quiz') else 'Prends ton temps, tu apprends.' }}</span><button class="button primary">Valider <span>→</span></button></div>
+  </form>
+  {% else %}
+  {% if feedback.unlocks %}<div class="unlock-celebration" role="status">✦ Nouveau contenu débloqué : {{ feedback.unlocks|join(' · ') }}</div>{% endif %}
+  <div class="feedback {{ 'correct' if feedback.correct else 'incorrect' }}" role="status" data-correct="{{ 'yes' if feedback.correct else 'no' }}" data-feedback-id="{{ run.id }}:{{ run.position }}" data-combo="{{ run.combo }}" data-xp="{{ feedback.xp }}"><div class="feedback-symbol" aria-hidden="true">{{ '✓' if feedback.correct else '↻' }}</div><div class="feedback-content"><h2>{{ 'Молодец ! Bien joué.' if feedback.correct else 'Pas encore… on le retient !' }}</h2>
+    <div class="translation-highlight">{{ language_badge('ru') }}<strong class="translation-russian" lang="ru">{{ feedback.answer }}</strong>{{ language_badge('fr') }}<strong class="translation-french" lang="fr">{{ feedback.french }}</strong></div>
+    {% if not feedback.correct %}<p class="tiny">Ta réponse : {{ feedback.input or 'Je ne sais pas' }}</p>{% endif %}<span class="xp-earned">{{ '+' ~ feedback.xp ~ ' XP' if feedback.correct else 'Ce mot reviendra dans tes révisions.' }}</span>
+    {% if feedback.correct and run.combo>=2 %}<p class="combo-reward">🔥 {{ run.combo }} d’affilée ! <strong>Bonus +{{ [run.combo-1,5]|min * 2 }} XP</strong></p>
+    {% elif not feedback.correct and feedback.lost_combo|default(0)>=2 %}<p class="combo-broken">Série de {{ feedback.lost_combo }} interrompue… À toi de la relancer !</p>
+    {% elif not feedback.correct %}<p class="combo-broken">Raté de peu ? Regarde le mot, puis relève le défi suivant.</p>{% endif %}
+  </div></div>
+  <p class="input-help">Source : {{ sources[word.source] }}</p>
+  <form action="{{ url_for('next_question') }}" method="post" class="next-form" {% if feedback.auto_advance %}data-auto-next="1"{% endif %}><input type="hidden" name="csrf" value="{{ csrf_token }}"><input type="hidden" name="position" value="{{ run.position }}"><input type="hidden" name="run_id" value="{{ run.id }}"><button class="button primary" autofocus>{{ 'Voir mes résultats' if run.position+1==length else 'Continuer' }} <span>→</span></button></form>
+  {% endif %}
+</section><p id="speech-status" class="center tiny" role="status"></p>
+{% endblock %}

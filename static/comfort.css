@@ -1,0 +1,156 @@
+/* Comfortable click targets at every size, with a roomier desktop layout. */
+.volume-control{display:flex;align-items:center;gap:8px;margin-left:auto;margin-right:20px;font-size:12px;white-space:nowrap}
+.volume-control input{width:100px;min-height:44px;padding:0;accent-color:var(--accent);cursor:pointer}
+.volume-control output{min-width:38px;font-variant-numeric:tabular-nums;color:var(--muted)}
+@media(max-width:700px){
+  .topbar{flex-wrap:wrap;height:auto;min-height:76px;padding-top:10px;padding-bottom:10px;gap:6px}
+  .volume-control{order:3;flex-basis:100%;margin:0;justify-content:flex-end}
+  .volume-control input{flex:1;max-width:180px;min-height:32px}
+}
+.button,.text-button,.favorite,.sound-icon,.topic-bottom button,.listen-button,.voice-preview-actions .button,.voice-preview-actions .stop-speech{min-height:44px;min-width:44px}
+.favorite,.sound-icon,.topic-bottom button{display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.favorite{border-radius:10px;font-size:30px}
+.favorite:hover{background:var(--surface)}
+.sound-icon{padding:8px 12px;font-size:14px}
+.sound-icon .sound-label{font-size:12px;font-weight:600}
+.word-bottom{flex-wrap:wrap;row-gap:10px}
+.speech-actions{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
+.word-row .speech-actions{flex-shrink:0;max-width:100%}
+.course-notes{margin-bottom:24px}
+.course-notes>summary{cursor:pointer;font-weight:700;min-height:44px;align-content:center}
+.course-notes-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:24px;padding-top:20px}
+.course-notes-grid section{min-width:0}
+.course-notes-grid h2{font-size:20px;margin-bottom:12px}
+.course-notes-grid p{line-height:1.8;margin:10px 0}
+.course-notes-grid [lang=ru]{color:var(--accent);font-weight:600}
+.text-button{padding:8px 0}
+.topic-bottom button{border-radius:10px;background:var(--blue-soft);font-size:24px}
+.topic-bottom button:hover{background:var(--surface)}
+.nav-link{min-height:48px}
+.topbar .mini-avatar{width:44px;height:44px;font-size:15px}
+.section-title>a,.practice-top .subtle-link,.daily-panel .subtle-link,.source-note a{display:inline-flex;align-items:center;min-height:44px}
+.practice-card .keyboard-wrap summary{min-height:44px;align-content:center;padding:8px 4px}
+.word-source summary{min-height:36px;align-content:center}
+.toggle-row{min-height:64px;padding-bottom:10px}
+button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+
+@media(min-width:1440px){
+  body{font-size:16px}
+  .sidebar{width:280px;padding:32px 22px 0}
+  .workspace{margin-left:280px}
+  main{max-width:1800px;padding:38px 48px 44px}
+  footer{max-width:1800px;padding-left:48px;padding-right:48px;font-size:13px}
+  footer span{font-size:13px}
+  .topbar{height:94px;padding:0 48px;font-size:16px}
+  .topbar .tiny,.top-stats{font-size:14px}
+  .xp-pill{padding:9px 16px}
+  .brand{font-size:40px}
+  .brand-caption{font-size:10px;letter-spacing:1.3px;margin-bottom:30px}
+  .nav-link{font-size:16px;min-height:58px;gap:15px;padding:14px 16px;margin-bottom:10px}
+  .nav-icon{font-size:28px;width:30px}
+  .nav-link small{font-size:12px;padding:1px 7px}
+  .profile strong{font-size:15px;max-width:155px}
+  .profile small,.sidebar-tip strong,.sidebar-tip p{font-size:13px}
+  .sidebar-tip .tiny{font-size:12px}
+  .sidebar-bottom{padding-top:24px}
+  .avatar{width:46px;height:46px}
+  .button,.review-panel .button,.voice-preview-actions .button{font-size:16px;min-height:52px;padding:13px 24px;gap:18px}
+  .button span{font-size:23px}
+  .text-button{font-size:15px;min-height:48px}
+  .text-button span{font-size:25px}
+  .favorite,.sound-icon,.topic-bottom button{min-height:48px;min-width:48px}
+  .sound-icon{font-size:19px;padding:10px 16px}
+  .sound-icon .sound-label{font-size:14px}
+  .favorite{font-size:34px}
+  .topic-bottom button{font-size:28px}
+  .page-heading h1{font-size:44px}
+  .page-heading p:last-child{font-size:16px}
+  .eyebrow{font-size:12px}
+  .date-tag,.count-tag{font-size:14px}
+  .dashboard-grid{grid-template-columns:minmax(0,1fr) 320px;gap:28px}
+  .hero{padding:34px;min-height:330px}
+  .hero h2{font-size:38px}
+  .hero p{font-size:16px}
+  .hero-label,.hero small{font-size:12px}
+  .section-title h2{font-size:23px}
+  .section-title>a{font-size:15px}
+  .section-title>span{font-size:11px}
+  .exercise-card{padding:24px}
+  .exercise-card h3{font-size:20px}
+  .exercise-card p{font-size:15px;min-height:76px;line-height:1.65}
+  .exercise-icon{width:54px;height:54px;font-size:32px}
+  .xp-label{font-size:12px}
+  .topic-card{padding:21px}
+  .topic-card h3{font-size:17px}
+  .topic-top .tiny,.topic-bottom small{font-size:13px}
+  .topic-symbol{width:40px;height:40px;font-size:26px}
+  .daily-panel h3,.level-panel h3,.review-panel h3{font-size:19px}
+  .daily-panel .center,.review-panel p,.level-heading strong{font-size:15px}
+  .daily-panel .tiny,.level-heading .tiny,.level-panel>p,.mini-metrics span,.source-note p,.source-note a{font-size:13px}
+  .daily-panel .subtle-link{font-size:14px;justify-content:center}
+  .practice-card,.practice-top,.session-progress{max-width:1000px}
+  .practice-card{padding:32px 40px}
+  .practice-top,.practice-top>span,.practice-top .subtle-link{font-size:15px}
+  .session-progress>span{font-size:15px}
+  .session-progress .progress-track{height:12px}
+  .practice-meta .tiny,.category-pill{font-size:13px}
+  .practice-card>.eyebrow{font-size:13px}
+  .language-badge{font-size:14px;gap:11px}
+  .language-flag{width:32px;height:22px}
+  .word-pair .question-word{font-size:48px}
+  .word-translation strong{font-size:38px}
+  .word-row .listen-button{min-height:52px;padding:12px 20px;font-size:16px;gap:10px}
+  .practice-card .input-label>span:last-child,.practice-card #writing-status,.practice-card .input-help,.answer-bottom .tiny,.answer-language>span{font-size:14px}
+  .practice-card .russian-input{min-height:66px;font-size:28px;padding:16px 20px}
+  .russian-input::placeholder{font-size:22px}
+  .practice-card .keyboard-wrap summary{font-size:16px;min-height:52px}
+  .key-row{gap:7px;margin-bottom:8px}
+  .key-row button{min-width:44px;height:48px;font-size:22px;border-radius:8px}
+  .key-row .space-key{width:240px;font-size:14px}
+  .choice{font-size:18px;min-height:84px;padding:20px;gap:16px}
+  .choice-number{height:36px;width:36px;font-size:15px}
+  .feedback h2{font-size:23px}
+  .feedback p{font-size:17px}
+  .feedback p.tiny,.feedback .combo-broken,.xp-earned{font-size:14px}
+  .feedback-symbol{height:48px;width:48px;font-size:28px}
+  .translation-russian{font-size:32px}
+  .translation-french{font-size:42px}
+  .word-card{padding:24px}
+  .word-card h2{font-size:32px}
+  .word-card>p{font-size:17px}
+  .word-top .tiny,.word-status,.word-source,.word-source p{font-size:13px}
+  .filters label,.settings-form>label:not(.toggle-row),.voice-settings>label,.voice-settings #browser-voice-wrap>label{font-size:14px}
+  .filters input,.filters select,.settings-form>input,.settings-form>select,.voice-settings select{min-height:52px;font-size:16px;padding:12px 16px}
+  .toggle-row strong{font-size:16px}
+  .toggle-row small{font-size:14px}
+  input[type=checkbox]{width:24px;height:24px}
+  .theme-option{padding:10px 8px}
+  .theme-option strong{font-size:12px}
+  .explain-list,.privacy-panel p,.sources-panel p,.sources-panel ul{font-size:15px}
+  .voice-disclosure,.privacy-panel .tiny,.sources-panel .tiny{font-size:13px}
+  .voice-preview-actions .stop-speech{font-size:15px}
+  .stats-grid .metric-card p,.achievement strong{font-size:15px}
+  .achievement small,.chart-column>span,.chart-column>small{font-size:13px}
+  table{font-size:15px}th,td strong{font-size:14px}td small{font-size:13px}
+  .letter-card p{font-size:16px}.letter-index,.letter-type{font-size:12px}
+  .alphabet-intro p,.alphabet-note p{font-size:16px}
+  .result-card{max-width:1000px}
+  .result-card>p{font-size:16px}
+  .result-metrics span{font-size:12px}
+}
+
+@media(min-width:1920px){
+  .practice-card,.practice-top,.session-progress{max-width:1080px}
+  .practice-card{padding:36px 48px}
+  .word-pair .question-word{font-size:54px}
+  .word-translation strong{font-size:42px}
+  .button,.review-panel .button,.voice-preview-actions .button{min-height:56px;font-size:17px}
+  .word-row .listen-button{min-height:56px;font-size:17px}
+  .key-row button{min-width:48px;height:52px}
+}
+
+@media(max-width:540px){
+  .sound-icon{padding:8px;gap:5px}
+  .word-grid{grid-template-columns:1fr}
+  .word-bottom{gap:12px}
+}

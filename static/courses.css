@@ -1,0 +1,32 @@
+.course-welcome{display:flex;align-items:center;gap:28px;margin-bottom:30px;background:var(--paper)}
+.alphabet-audio-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))}
+.alphabet-audio-card{display:flex;flex-direction:column;align-items:center;padding:26px 18px 20px}
+.alphabet-audio-card .speech-actions{justify-content:center;gap:8px}
+.alphabet-letter-actions{margin-top:16px}
+.alphabet-word-example{border-top:1px solid var(--border);padding-top:18px;margin-top:20px;width:100%}
+.alphabet-word-example h2{font-size:28px;margin:10px 0 6px;overflow-wrap:anywhere}
+.alphabet-word-example mark{background:var(--blue-soft);color:var(--accent);border-radius:4px;padding:0 2px;text-decoration:underline;text-underline-offset:5px}
+.alphabet-audio-card .alphabet-word-example>p{font-size:16px;color:var(--ink);margin-bottom:14px}
+.alphabet-word-example small{display:block;margin-top:12px;font-size:12px}
+.alphabet-audio-card .alphabet-sign-note{font-size:13px;margin:12px 0 0}
+.alphabet-speech-status{position:sticky;top:0;z-index:5;background:var(--paper);border-radius:8px;padding:8px 12px;min-height:36px}
+.alphabet-speech-status:empty{display:none}
+.course-welcome>div{flex:1}.course-welcome p{margin-bottom:0;max-width:850px}.course-welcome .button{flex-shrink:0}
+.course-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.course-card{display:flex;flex-direction:column;position:relative;min-width:0;transition:border-color .15s,transform .15s}
+.course-card:hover{border-color:var(--accent,var(--green));transform:translateY(-2px)}
+.course-number{display:block;font-size:26px;font-weight:700;color:var(--accent,var(--green));margin-bottom:16px}
+.course-card h2{margin:8px 0 12px;font-size:23px}.course-card p{flex:1;font-size:16px;line-height:1.7}
+.course-open{font-weight:600;color:var(--accent,var(--green));display:flex;justify-content:space-between;gap:12px;margin-top:10px}
+.course-provenance{font-size:14px;line-height:1.8;margin-top:28px;max-width:1000px}.course-provenance a{text-decoration:underline}
+.lesson-layout{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(300px,1fr);gap:30px;align-items:start}
+.lesson-reading{padding:36px}.lesson-reading>section{margin-bottom:32px}.lesson-reading h2{font-size:25px;margin:8px 0 12px}
+.lesson-reading p{font-size:19px;line-height:1.95;color:var(--ink);max-width:75ch;white-space:normal}
+.lesson-reading>section:last-child{margin-bottom:0}.lesson-tip{border-left:4px solid var(--accent,var(--green));padding:4px 22px;margin:32px 0;background:var(--bg)}
+.lesson-check{border-top:1px solid var(--border);padding-top:24px}.lesson-check summary{cursor:pointer;min-height:48px;align-content:center;font-weight:600;color:var(--accent,var(--green))}
+.lesson-check details[open]{padding-bottom:8px}.lesson-check details p{margin:16px 0 0}
+.lesson-examples>.section-title{margin-top:0}.lesson-example{margin-bottom:16px;padding:22px}.lesson-example h3{font-size:27px;margin-bottom:8px}.lesson-example>p{font-size:18px;color:var(--ink);margin-bottom:16px}
+.lesson-practice{margin-top:24px}.lesson-practice .button{width:100%;white-space:normal}.lesson-pagination{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;margin-top:30px}.lesson-pagination .button{white-space:normal}
+@media(max-width:1150px){.course-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.course-welcome{align-items:flex-start;flex-direction:column}.lesson-layout{grid-template-columns:1fr}.lesson-examples{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.lesson-examples>.section-title,.lesson-examples>#speech-status,.lesson-practice{grid-column:1/-1}.lesson-example{margin-bottom:0}.lesson-reading p{font-size:18px}}
+@media(max-width:780px){.sidebar nav{flex-wrap:wrap;justify-content:flex-start}.sidebar nav .nav-link{flex:0 1 auto}.course-card h2{font-size:21px}}
+@media(max-width:540px){.course-grid,.lesson-examples{grid-template-columns:1fr}.course-welcome{padding:22px}.course-card{padding:24px}.lesson-reading{padding:22px}.lesson-reading h2{font-size:22px}.lesson-reading p{font-size:17px;line-height:1.85}.lesson-pagination{flex-direction:column}.course-welcome .button{width:100%;white-space:normal}}

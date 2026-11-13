@@ -1,0 +1,2090 @@
+{
+  "sources": {
+    "prepositions": "Complément pédagogique : prépositions russes courantes et exemples contextualisés (ajout à la demande)",
+    "consonnes": "fiche_pedagogique_consonnes.pdf",
+    "accent": "fiche_pedagogique_accent_tonique.pdf",
+    "lecon2": "fiche_pedagogique_lecon_2.pdf",
+    "devoirs": "Домашнее задание_ Домашнее задание - Русский язык (A1).pdf",
+    "musique": "2 Домашнее задание.pdf",
+    "soir": "Мой вечер , текст и словарь 30 окт.pdf",
+    "sons": "russe_consonnes_voyelles.pdf",
+    "devoirs3": "Devoirs_maison_3_Russe_Etre_Avoir.pdf (contenu vérifié)",
+    "etre_avoir": "Russian_Verbs_Быть_и_Иметь_corrige.pdf (vérifié avec le cours original)",
+    "possessifs_genre": "Притяжательные местоимения и род.pdf (règles précisées)",
+    "lecon2_revision": "fiche_pedagogique_lecon_2 1.pdf (version complémentaire)"
+  },
+  "words": [
+    {
+      "id": 1,
+      "ru": "дом",
+      "fr": "la maison",
+      "category": "Au quotidien",
+      "source": "consonnes"
+    },
+    {
+      "id": 2,
+      "ru": "мост",
+      "fr": "le pont",
+      "category": "Au quotidien",
+      "source": "consonnes"
+    },
+    {
+      "id": 3,
+      "ru": "сад",
+      "fr": "le jardin",
+      "category": "Au quotidien",
+      "source": "consonnes"
+    },
+    {
+      "id": 4,
+      "ru": "суп",
+      "fr": "la soupe",
+      "category": "À table",
+      "source": "consonnes"
+    },
+    {
+      "id": 5,
+      "ru": "сон",
+      "fr": "le sommeil, le rêve",
+      "category": "Au quotidien",
+      "source": "consonnes"
+    },
+    {
+      "id": 6,
+      "ru": "зонт",
+      "fr": "le parapluie",
+      "category": "Au quotidien",
+      "source": "consonnes"
+    },
+    {
+      "id": 7,
+      "ru": "банк",
+      "fr": "la banque",
+      "category": "Au quotidien",
+      "source": "consonnes"
+    },
+    {
+      "id": 8,
+      "ru": "сок",
+      "fr": "le jus",
+      "category": "À table",
+      "source": "consonnes"
+    },
+    {
+      "id": 9,
+      "ru": "кот",
+      "fr": "le chat",
+      "category": "Au quotidien",
+      "source": "consonnes"
+    },
+    {
+      "id": 10,
+      "ru": "звук",
+      "fr": "le son",
+      "category": "Premiers mots",
+      "source": "consonnes"
+    },
+    {
+      "id": 11,
+      "ru": "год",
+      "fr": "l’année",
+      "category": "Au quotidien",
+      "source": "consonnes"
+    },
+    {
+      "id": 12,
+      "ru": "газ",
+      "fr": "le gaz",
+      "category": "Au quotidien",
+      "source": "consonnes"
+    },
+    {
+      "id": 13,
+      "ru": "вода́",
+      "fr": "l’eau",
+      "category": "À table",
+      "source": "accent"
+    },
+    {
+      "id": 14,
+      "ru": "окно́",
+      "fr": "la fenêtre",
+      "category": "Au quotidien",
+      "source": "accent"
+    },
+    {
+      "id": 15,
+      "ru": "ма́ма",
+      "fr": "la maman",
+      "category": "Les personnes",
+      "source": "accent"
+    },
+    {
+      "id": 16,
+      "ru": "па́па",
+      "fr": "le papa",
+      "category": "Les personnes",
+      "source": "accent"
+    },
+    {
+      "id": 17,
+      "ru": "фонта́н",
+      "fr": "la fontaine",
+      "category": "Au quotidien",
+      "source": "accent"
+    },
+    {
+      "id": 18,
+      "ru": "стака́н",
+      "fr": "le verre",
+      "category": "À table",
+      "source": "accent"
+    },
+    {
+      "id": 19,
+      "ru": "мо́да",
+      "fr": "la mode",
+      "category": "Au quotidien",
+      "source": "accent"
+    },
+    {
+      "id": 20,
+      "ru": "на́до",
+      "fr": "il faut",
+      "category": "Petits mots",
+      "source": "accent"
+    },
+    {
+      "id": 21,
+      "ru": "мно́го",
+      "fr": "beaucoup",
+      "category": "Petits mots",
+      "source": "accent"
+    },
+    {
+      "id": 22,
+      "ru": "ва́за",
+      "fr": "le vase",
+      "category": "Au quotidien",
+      "source": "accent"
+    },
+    {
+      "id": 23,
+      "ru": "су́мка",
+      "fr": "le sac",
+      "category": "Au quotidien",
+      "source": "accent"
+    },
+    {
+      "id": 24,
+      "ru": "она́",
+      "fr": "elle",
+      "category": "Les pronoms",
+      "source": "accent"
+    },
+    {
+      "id": 25,
+      "ru": "оно́",
+      "fr": "il / ça (neutre)",
+      "category": "Les pronoms",
+      "source": "accent"
+    },
+    {
+      "id": 26,
+      "ru": "туда́",
+      "fr": "là-bas (direction)",
+      "category": "Petits mots",
+      "source": "accent"
+    },
+    {
+      "id": 27,
+      "ru": "давно́",
+      "fr": "depuis longtemps",
+      "category": "Petits mots",
+      "source": "accent"
+    },
+    {
+      "id": 28,
+      "ru": "куда́",
+      "fr": "où (direction)",
+      "category": "Questions",
+      "source": "accent"
+    },
+    {
+      "id": 29,
+      "ru": "когда́",
+      "fr": "quand",
+      "category": "Questions",
+      "source": "accent"
+    },
+    {
+      "id": 30,
+      "ru": "тогда́",
+      "fr": "alors, dans ce cas",
+      "category": "Petits mots",
+      "source": "soir"
+    },
+    {
+      "id": 31,
+      "ru": "ваго́н",
+      "fr": "le wagon",
+      "category": "Au quotidien",
+      "source": "accent"
+    },
+    {
+      "id": 32,
+      "ru": "бана́н",
+      "fr": "la banane",
+      "category": "À table",
+      "source": "accent"
+    },
+    {
+      "id": 33,
+      "ru": "пото́м",
+      "fr": "ensuite",
+      "category": "Petits mots",
+      "source": "accent"
+    },
+    {
+      "id": 34,
+      "ru": "заво́д",
+      "fr": "l’usine",
+      "category": "Au quotidien",
+      "source": "accent"
+    },
+    {
+      "id": 35,
+      "ru": "восто́к",
+      "fr": "l’est",
+      "category": "Au quotidien",
+      "source": "accent"
+    },
+    {
+      "id": 36,
+      "ru": "доска́",
+      "fr": "le tableau",
+      "category": "Au quotidien",
+      "source": "accent"
+    },
+    {
+      "id": 37,
+      "ru": "бу́ква",
+      "fr": "la lettre",
+      "category": "Premiers mots",
+      "source": "accent"
+    },
+    {
+      "id": 38,
+      "ru": "за́пад",
+      "fr": "l’ouest",
+      "category": "Au quotidien",
+      "source": "accent"
+    },
+    {
+      "id": 39,
+      "ru": "а́том",
+      "fr": "l’atome",
+      "category": "Premiers mots",
+      "source": "accent"
+    },
+    {
+      "id": 40,
+      "ru": "ко́смос",
+      "fr": "l’espace",
+      "category": "Premiers mots",
+      "source": "accent"
+    },
+    {
+      "id": 41,
+      "ru": "ва́нна",
+      "fr": "la baignoire",
+      "category": "Au quotidien",
+      "source": "accent"
+    },
+    {
+      "id": 42,
+      "ru": "то́нна",
+      "fr": "la tonne",
+      "category": "Premiers mots",
+      "source": "accent"
+    },
+    {
+      "id": 43,
+      "ru": "ка́сса",
+      "fr": "la caisse",
+      "category": "Au quotidien",
+      "source": "accent"
+    },
+    {
+      "id": 44,
+      "ru": "ма́сса",
+      "fr": "la masse",
+      "category": "Premiers mots",
+      "source": "accent"
+    },
+    {
+      "id": 45,
+      "ru": "су́мма",
+      "fr": "la somme",
+      "category": "Premiers mots",
+      "source": "accent"
+    },
+    {
+      "id": 46,
+      "ru": "ко́фта",
+      "fr": "le gilet",
+      "category": "Au quotidien",
+      "source": "accent"
+    },
+    {
+      "id": 47,
+      "ru": "па́пка",
+      "fr": "le dossier",
+      "category": "Au quotidien",
+      "source": "accent"
+    },
+    {
+      "id": 48,
+      "ru": "фо́то",
+      "fr": "la photo",
+      "category": "Au quotidien",
+      "source": "lecon2"
+    },
+    {
+      "id": 49,
+      "ru": "Москва́",
+      "fr": "Moscou",
+      "category": "Les personnes",
+      "source": "lecon2"
+    },
+    {
+      "id": 50,
+      "ru": "поэ́т",
+      "fr": "le poète",
+      "category": "Les personnes",
+      "source": "lecon2"
+    },
+    {
+      "id": 51,
+      "ru": "рабо́та",
+      "fr": "le travail",
+      "category": "Au quotidien",
+      "source": "lecon2"
+    },
+    {
+      "id": 52,
+      "ru": "э́то",
+      "fr": "c’est / ceci",
+      "category": "Petits mots",
+      "source": "lecon2"
+    },
+    {
+      "id": 53,
+      "ru": "тут",
+      "fr": "ici",
+      "category": "Petits mots",
+      "source": "consonnes"
+    },
+    {
+      "id": 54,
+      "ru": "там",
+      "fr": "là-bas",
+      "category": "Petits mots",
+      "source": "soir"
+    },
+    {
+      "id": 55,
+      "ru": "вот",
+      "fr": "voici / voilà",
+      "category": "Petits mots",
+      "source": "consonnes"
+    },
+    {
+      "id": 56,
+      "ru": "рука́",
+      "fr": "la main",
+      "category": "Au quotidien",
+      "source": "lecon2"
+    },
+    {
+      "id": 57,
+      "ru": "ро́за",
+      "fr": "la rose",
+      "category": "Au quotidien",
+      "source": "lecon2"
+    },
+    {
+      "id": 58,
+      "ru": "брат",
+      "fr": "le frère",
+      "category": "Les personnes",
+      "source": "lecon2"
+    },
+    {
+      "id": 59,
+      "ru": "тра́сса",
+      "fr": "la route principale",
+      "category": "Au quotidien",
+      "source": "lecon2"
+    },
+    {
+      "id": 60,
+      "ru": "дра́ма",
+      "fr": "le drame",
+      "category": "Loisirs",
+      "source": "lecon2"
+    },
+    {
+      "id": 61,
+      "ru": "март",
+      "fr": "mars",
+      "category": "Au quotidien",
+      "source": "lecon2"
+    },
+    {
+      "id": 62,
+      "ru": "тра́ктор",
+      "fr": "le tracteur",
+      "category": "Au quotidien",
+      "source": "lecon2"
+    },
+    {
+      "id": 63,
+      "ru": "друг",
+      "fr": "un ami",
+      "category": "Les personnes",
+      "source": "soir"
+    },
+    {
+      "id": 64,
+      "ru": "спорт",
+      "fr": "le sport",
+      "category": "Loisirs",
+      "source": "lecon2"
+    },
+    {
+      "id": 65,
+      "ru": "тра́нспорт",
+      "fr": "le transport",
+      "category": "Au quotidien",
+      "source": "lecon2"
+    },
+    {
+      "id": 66,
+      "ru": "тру́дно",
+      "fr": "difficile",
+      "category": "Petits mots",
+      "source": "lecon2"
+    },
+    {
+      "id": 67,
+      "ru": "ка́рта",
+      "fr": "la carte",
+      "category": "Au quotidien",
+      "source": "lecon2"
+    },
+    {
+      "id": 68,
+      "ru": "трава́",
+      "fr": "l’herbe",
+      "category": "Au quotidien",
+      "source": "lecon2"
+    },
+    {
+      "id": 69,
+      "ru": "страна́",
+      "fr": "le pays",
+      "category": "Les personnes",
+      "source": "lecon2"
+    },
+    {
+      "id": 70,
+      "ru": "гора́",
+      "fr": "la montagne",
+      "category": "Au quotidien",
+      "source": "lecon2"
+    },
+    {
+      "id": 71,
+      "ru": "за́втра",
+      "fr": "demain",
+      "category": "Petits mots",
+      "source": "lecon2"
+    },
+    {
+      "id": 72,
+      "ru": "у́тром",
+      "fr": "le matin",
+      "category": "Petits mots",
+      "source": "lecon2"
+    },
+    {
+      "id": 73,
+      "ru": "вопро́с",
+      "fr": "la question",
+      "category": "Questions",
+      "source": "lecon2"
+    },
+    {
+      "id": 74,
+      "ru": "карма́н",
+      "fr": "la poche",
+      "category": "Au quotidien",
+      "source": "lecon2"
+    },
+    {
+      "id": 75,
+      "ru": "уро́к",
+      "fr": "la leçon",
+      "category": "Premiers mots",
+      "source": "lecon2"
+    },
+    {
+      "id": 76,
+      "ru": "па́спорт",
+      "fr": "le passeport",
+      "category": "Au quotidien",
+      "source": "lecon2"
+    },
+    {
+      "id": 77,
+      "ru": "фра́за",
+      "fr": "la phrase",
+      "category": "Premiers mots",
+      "source": "lecon2"
+    },
+    {
+      "id": 78,
+      "ru": "расска́з",
+      "fr": "le récit",
+      "category": "Premiers mots",
+      "source": "lecon2"
+    },
+    {
+      "id": 79,
+      "ru": "сторона́",
+      "fr": "le côté",
+      "category": "Au quotidien",
+      "source": "lecon2"
+    },
+    {
+      "id": 80,
+      "ru": "ко́мната",
+      "fr": "la pièce",
+      "category": "Au quotidien",
+      "source": "lecon2"
+    },
+    {
+      "id": 81,
+      "ru": "разгово́р",
+      "fr": "la conversation",
+      "category": "Premiers mots",
+      "source": "lecon2"
+    },
+    {
+      "id": 82,
+      "ru": "гастроно́м",
+      "fr": "le magasin d’alimentation",
+      "category": "Au quotidien",
+      "source": "lecon2"
+    },
+    {
+      "id": 83,
+      "ru": "пого́да",
+      "fr": "le temps (météo)",
+      "category": "Météo et soirée",
+      "source": "lecon2"
+    },
+    {
+      "id": 84,
+      "ru": "доро́га",
+      "fr": "la route",
+      "category": "Au quotidien",
+      "source": "lecon2"
+    },
+    {
+      "id": 85,
+      "ru": "до́рого",
+      "fr": "cher (prix)",
+      "category": "Petits mots",
+      "source": "lecon2"
+    },
+    {
+      "id": 86,
+      "ru": "ко́ротко",
+      "fr": "brièvement",
+      "category": "Petits mots",
+      "source": "lecon2"
+    },
+    {
+      "id": 87,
+      "ru": "я",
+      "fr": "je",
+      "category": "Les pronoms",
+      "source": "devoirs"
+    },
+    {
+      "id": 88,
+      "ru": "ты",
+      "fr": "tu",
+      "category": "Les pronoms",
+      "source": "devoirs"
+    },
+    {
+      "id": 89,
+      "ru": "он",
+      "fr": "il",
+      "category": "Les pronoms",
+      "source": "devoirs"
+    },
+    {
+      "id": 90,
+      "ru": "мы",
+      "fr": "nous",
+      "category": "Les pronoms",
+      "source": "devoirs"
+    },
+    {
+      "id": 91,
+      "ru": "вы",
+      "fr": "vous",
+      "category": "Les pronoms",
+      "source": "devoirs"
+    },
+    {
+      "id": 92,
+      "ru": "они́",
+      "fr": "ils / elles",
+      "category": "Les pronoms",
+      "source": "devoirs"
+    },
+    {
+      "id": 93,
+      "ru": "мой",
+      "fr": "mon (masculin)",
+      "category": "Les possessifs",
+      "source": "devoirs"
+    },
+    {
+      "id": 94,
+      "ru": "моя́",
+      "fr": "ma (féminin)",
+      "category": "Les possessifs",
+      "source": "devoirs"
+    },
+    {
+      "id": 95,
+      "ru": "моё",
+      "fr": "mon / ma (neutre)",
+      "category": "Les possessifs",
+      "source": "devoirs"
+    },
+    {
+      "id": 96,
+      "ru": "твой",
+      "fr": "ton (masculin)",
+      "category": "Les possessifs",
+      "source": "devoirs"
+    },
+    {
+      "id": 97,
+      "ru": "твоя́",
+      "fr": "ta (féminin)",
+      "category": "Les possessifs",
+      "source": "musique"
+    },
+    {
+      "id": 98,
+      "ru": "твоё",
+      "fr": "ton / ta (neutre)",
+      "category": "Les possessifs",
+      "source": "musique"
+    },
+    {
+      "id": 99,
+      "ru": "его́",
+      "fr": "son / sa (à lui)",
+      "category": "Les possessifs",
+      "source": "devoirs"
+    },
+    {
+      "id": 100,
+      "ru": "её",
+      "fr": "son / sa (à elle)",
+      "category": "Les possessifs",
+      "source": "devoirs"
+    },
+    {
+      "id": 101,
+      "ru": "наш",
+      "fr": "notre (masculin)",
+      "category": "Les possessifs",
+      "source": "devoirs"
+    },
+    {
+      "id": 102,
+      "ru": "на́ша",
+      "fr": "notre (féminin)",
+      "category": "Les possessifs",
+      "source": "devoirs"
+    },
+    {
+      "id": 103,
+      "ru": "на́ше",
+      "fr": "notre (neutre)",
+      "category": "Les possessifs",
+      "source": "musique"
+    },
+    {
+      "id": 104,
+      "ru": "ваш",
+      "fr": "votre (masculin)",
+      "category": "Les possessifs",
+      "source": "devoirs"
+    },
+    {
+      "id": 105,
+      "ru": "ва́ша",
+      "fr": "votre (féminin)",
+      "category": "Les possessifs",
+      "source": "devoirs"
+    },
+    {
+      "id": 106,
+      "ru": "их",
+      "fr": "leur",
+      "category": "Les possessifs",
+      "source": "devoirs"
+    },
+    {
+      "id": 107,
+      "ru": "маши́на",
+      "fr": "la voiture",
+      "category": "Au quotidien",
+      "source": "devoirs"
+    },
+    {
+      "id": 108,
+      "ru": "где",
+      "fr": "où (lieu)",
+      "category": "Questions",
+      "source": "devoirs"
+    },
+    {
+      "id": 109,
+      "ru": "плейли́ст",
+      "fr": "la playlist",
+      "category": "Loisirs",
+      "source": "musique"
+    },
+    {
+      "id": 110,
+      "ru": "биле́т",
+      "fr": "le billet",
+      "category": "Loisirs",
+      "source": "musique"
+    },
+    {
+      "id": 111,
+      "ru": "конце́рт",
+      "fr": "le concert",
+      "category": "Loisirs",
+      "source": "musique"
+    },
+    {
+      "id": 112,
+      "ru": "пе́сня",
+      "fr": "la chanson",
+      "category": "Loisirs",
+      "source": "musique"
+    },
+    {
+      "id": 113,
+      "ru": "друзья́",
+      "fr": "les amis",
+      "category": "Les personnes",
+      "source": "musique"
+    },
+    {
+      "id": 114,
+      "ru": "кофе́йня",
+      "fr": "un salon de café (spécialisé dans le café)",
+      "category": "Loisirs",
+      "source": "musique"
+    },
+    {
+      "id": 115,
+      "ru": "ко́фе",
+      "fr": "le café à boire (boisson)",
+      "category": "À table",
+      "source": "soir"
+    },
+    {
+      "id": 116,
+      "ru": "но́вый",
+      "fr": "nouveau",
+      "category": "Petits mots",
+      "source": "musique"
+    },
+    {
+      "id": 117,
+      "ru": "уже́",
+      "fr": "déjà",
+      "category": "Petits mots",
+      "source": "musique"
+    },
+    {
+      "id": 118,
+      "ru": "дождь",
+      "fr": "la pluie",
+      "category": "Météo et soirée",
+      "source": "soir"
+    },
+    {
+      "id": 119,
+      "ru": "ве́тер",
+      "fr": "le vent",
+      "category": "Météo et soirée",
+      "source": "soir"
+    },
+    {
+      "id": 120,
+      "ru": "у́лица",
+      "fr": "la rue",
+      "category": "Météo et soirée",
+      "source": "soir"
+    },
+    {
+      "id": 121,
+      "ru": "пя́тница",
+      "fr": "vendredi",
+      "category": "Météo et soirée",
+      "source": "soir"
+    },
+    {
+      "id": 122,
+      "ru": "ве́чер",
+      "fr": "le soir, la soirée",
+      "category": "Météo et soirée",
+      "source": "soir"
+    },
+    {
+      "id": 123,
+      "ru": "чай",
+      "fr": "le thé",
+      "category": "À table",
+      "source": "soir"
+    },
+    {
+      "id": 124,
+      "ru": "му́зыка",
+      "fr": "la musique",
+      "category": "Loisirs",
+      "source": "soir"
+    },
+    {
+      "id": 125,
+      "ru": "телефо́н",
+      "fr": "le téléphone",
+      "category": "Au quotidien",
+      "source": "soir"
+    },
+    {
+      "id": 126,
+      "ru": "Фра́нция",
+      "fr": "la France",
+      "category": "Les personnes",
+      "source": "soir"
+    },
+    {
+      "id": 127,
+      "ru": "язы́к",
+      "fr": "la langue",
+      "category": "Premiers mots",
+      "source": "soir"
+    },
+    {
+      "id": 128,
+      "ru": "кино́",
+      "fr": "le cinéma",
+      "category": "Loisirs",
+      "source": "soir"
+    },
+    {
+      "id": 129,
+      "ru": "футбо́л",
+      "fr": "le football",
+      "category": "Loisirs",
+      "source": "soir"
+    },
+    {
+      "id": 130,
+      "ru": "кафе́",
+      "fr": "un café / petit restaurant (lieu)",
+      "category": "Loisirs",
+      "source": "soir"
+    },
+    {
+      "id": 131,
+      "ru": "жить",
+      "fr": "habiter, vivre",
+      "category": "Les verbes",
+      "source": "soir"
+    },
+    {
+      "id": 132,
+      "ru": "рабо́тать",
+      "fr": "travailler",
+      "category": "Les verbes",
+      "source": "soir"
+    },
+    {
+      "id": 133,
+      "ru": "учи́ть",
+      "fr": "apprendre, étudier",
+      "category": "Les verbes",
+      "source": "soir"
+    },
+    {
+      "id": 134,
+      "ru": "слу́шать",
+      "fr": "écouter",
+      "category": "Les verbes",
+      "source": "soir"
+    },
+    {
+      "id": 135,
+      "ru": "смотре́ть",
+      "fr": "regarder",
+      "category": "Les verbes",
+      "source": "soir"
+    },
+    {
+      "id": 136,
+      "ru": "люби́ть",
+      "fr": "aimer",
+      "category": "Les verbes",
+      "source": "soir"
+    },
+    {
+      "id": 137,
+      "ru": "хоте́ть",
+      "fr": "vouloir",
+      "category": "Les verbes",
+      "source": "soir"
+    },
+    {
+      "id": 138,
+      "ru": "гуля́ть",
+      "fr": "se promener",
+      "category": "Les verbes",
+      "source": "soir"
+    },
+    {
+      "id": 139,
+      "ru": "звони́ть",
+      "fr": "téléphoner, appeler",
+      "category": "Les verbes",
+      "source": "soir"
+    },
+    {
+      "id": 140,
+      "ru": "де́лать",
+      "fr": "faire",
+      "category": "Les verbes",
+      "source": "soir"
+    },
+    {
+      "id": 141,
+      "ru": "пить",
+      "fr": "boire",
+      "category": "Les verbes",
+      "source": "soir"
+    },
+    {
+      "id": 142,
+      "ru": "идти́",
+      "fr": "aller (à pied)",
+      "category": "Les verbes",
+      "source": "soir"
+    },
+    {
+      "id": 143,
+      "ru": "сего́дня",
+      "fr": "aujourd’hui",
+      "category": "Petits mots",
+      "source": "soir"
+    },
+    {
+      "id": 144,
+      "ru": "до́ма",
+      "fr": "à la maison",
+      "category": "Petits mots",
+      "source": "soir"
+    },
+    {
+      "id": 145,
+      "ru": "то́же",
+      "fr": "aussi",
+      "category": "Petits mots",
+      "source": "soir"
+    },
+    {
+      "id": 146,
+      "ru": "почему́",
+      "fr": "pourquoi",
+      "category": "Questions",
+      "source": "soir"
+    },
+    {
+      "id": 147,
+      "ru": "отли́чно",
+      "fr": "excellent, super",
+      "category": "Petits mots",
+      "source": "soir"
+    },
+    {
+      "id": 148,
+      "ru": "хорошо́",
+      "fr": "bien",
+      "category": "Petits mots",
+      "source": "soir"
+    },
+    {
+      "id": 149,
+      "ru": "свобо́ден",
+      "fr": "libre, disponible (masculin)",
+      "category": "Petits mots",
+      "source": "soir"
+    },
+    {
+      "id": 150,
+      "ru": "Приве́т!",
+      "fr": "Salut !",
+      "category": "Expressions",
+      "source": "soir"
+    },
+    {
+      "id": 151,
+      "ru": "Как дела́?",
+      "fr": "Comment ça va ?",
+      "category": "Expressions",
+      "source": "soir"
+    },
+    {
+      "id": 152,
+      "ru": "Всё хорошо́.",
+      "fr": "Tout va bien.",
+      "category": "Expressions",
+      "source": "soir"
+    },
+    {
+      "id": 153,
+      "ru": "Что ты де́лаешь?",
+      "fr": "Qu’est-ce que tu fais ?",
+      "category": "Expressions",
+      "source": "soir"
+    },
+    {
+      "id": 154,
+      "ru": "До встре́чи!",
+      "fr": "À bientôt !",
+      "category": "Expressions",
+      "source": "soir"
+    },
+    {
+      "id": 155,
+      "ru": "Я хочу́ гуля́ть.",
+      "fr": "Je veux me promener.",
+      "category": "Expressions",
+      "source": "soir"
+    },
+    {
+      "id": 156,
+      "ru": "Я люблю́ ко́фе.",
+      "fr": "J’aime le café.",
+      "category": "Expressions",
+      "source": "soir"
+    },
+    {
+      "id": 157,
+      "ru": "У меня́ есть зонт.",
+      "fr": "J’ai un parapluie.",
+      "category": "Expressions",
+      "source": "soir"
+    },
+    {
+      "id": 158,
+      "ru": "На у́лице дождь.",
+      "fr": "Il pleut dehors.",
+      "category": "Expressions",
+      "source": "soir"
+    },
+    {
+      "id": 159,
+      "ru": "мать",
+      "fr": "la mère",
+      "category": "Les personnes",
+      "source": "sons"
+    },
+    {
+      "id": 160,
+      "ru": "кит",
+      "fr": "la baleine",
+      "category": "Au quotidien",
+      "source": "sons"
+    },
+    {
+      "id": 161,
+      "ru": "о́чень",
+      "fr": "très",
+      "category": "Petits mots",
+      "source": "sons"
+    },
+    {
+      "id": 162,
+      "ru": "сестра́",
+      "fr": "la sœur",
+      "category": "Les personnes",
+      "source": "sons"
+    },
+    {
+      "id": 163,
+      "ru": "мужчи́на",
+      "fr": "l’homme",
+      "category": "Les personnes",
+      "source": "sons"
+    },
+    {
+      "id": 164,
+      "ru": "да",
+      "fr": "oui",
+      "category": "Petits mots",
+      "source": "lecon2"
+    },
+    {
+      "id": 165,
+      "ru": "быть",
+      "fr": "être",
+      "category": "Les verbes",
+      "source": "etre_avoir"
+    },
+    {
+      "id": 166,
+      "ru": "име́ть",
+      "fr": "avoir (verbe ; possession courante : у … есть)",
+      "category": "Les verbes",
+      "source": "etre_avoir"
+    },
+    {
+      "id": 167,
+      "ru": "стул",
+      "fr": "la chaise",
+      "category": "Au quotidien",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 168,
+      "ru": "кни́ги",
+      "fr": "les livres",
+      "category": "Au quotidien",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 169,
+      "ru": "мои́",
+      "fr": "mes (pluriel)",
+      "category": "Les possessifs",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 170,
+      "ru": "твои́",
+      "fr": "tes (pluriel)",
+      "category": "Les possessifs",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 171,
+      "ru": "на́ши",
+      "fr": "nos (pluriel)",
+      "category": "Les possessifs",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 172,
+      "ru": "ва́ше",
+      "fr": "votre (neutre)",
+      "category": "Les possessifs",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 173,
+      "ru": "ва́ши",
+      "fr": "vos (pluriel)",
+      "category": "Les possessifs",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 174,
+      "ru": "мой стул",
+      "fr": "ma chaise",
+      "category": "Les possessifs",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 175,
+      "ru": "моя́ су́мка",
+      "fr": "mon sac",
+      "category": "Les possessifs",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 176,
+      "ru": "моё окно́",
+      "fr": "ma fenêtre",
+      "category": "Les possessifs",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 177,
+      "ru": "мои́ кни́ги",
+      "fr": "mes livres",
+      "category": "Les possessifs",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 178,
+      "ru": "твой стул",
+      "fr": "ta chaise",
+      "category": "Les possessifs",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 179,
+      "ru": "твоя́ су́мка",
+      "fr": "ton sac",
+      "category": "Les possessifs",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 180,
+      "ru": "твоё окно́",
+      "fr": "ta fenêtre",
+      "category": "Les possessifs",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 181,
+      "ru": "твои́ кни́ги",
+      "fr": "tes livres",
+      "category": "Les possessifs",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 182,
+      "ru": "наш стул",
+      "fr": "notre chaise",
+      "category": "Les possessifs",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 183,
+      "ru": "на́ша су́мка",
+      "fr": "notre sac",
+      "category": "Les possessifs",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 184,
+      "ru": "на́ше окно́",
+      "fr": "notre fenêtre",
+      "category": "Les possessifs",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 185,
+      "ru": "на́ши кни́ги",
+      "fr": "nos livres",
+      "category": "Les possessifs",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 186,
+      "ru": "ваш стул",
+      "fr": "votre chaise",
+      "category": "Les possessifs",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 187,
+      "ru": "ва́ша су́мка",
+      "fr": "votre sac",
+      "category": "Les possessifs",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 188,
+      "ru": "ва́ше окно́",
+      "fr": "votre fenêtre",
+      "category": "Les possessifs",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 189,
+      "ru": "ва́ши кни́ги",
+      "fr": "vos livres",
+      "category": "Les possessifs",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 190,
+      "ru": "его́ стул",
+      "fr": "sa chaise (à lui)",
+      "category": "Les possessifs",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 191,
+      "ru": "его́ су́мка",
+      "fr": "son sac (à lui)",
+      "category": "Les possessifs",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 192,
+      "ru": "его́ окно́",
+      "fr": "sa fenêtre (à lui)",
+      "category": "Les possessifs",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 193,
+      "ru": "его́ кни́ги",
+      "fr": "ses livres (à lui)",
+      "category": "Les possessifs",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 194,
+      "ru": "её стул",
+      "fr": "sa chaise (à elle)",
+      "category": "Les possessifs",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 195,
+      "ru": "её су́мка",
+      "fr": "son sac (à elle)",
+      "category": "Les possessifs",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 196,
+      "ru": "её окно́",
+      "fr": "sa fenêtre (à elle)",
+      "category": "Les possessifs",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 197,
+      "ru": "её кни́ги",
+      "fr": "ses livres (à elle)",
+      "category": "Les possessifs",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 198,
+      "ru": "их стул",
+      "fr": "leur chaise",
+      "category": "Les possessifs",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 199,
+      "ru": "их су́мка",
+      "fr": "leur sac",
+      "category": "Les possessifs",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 200,
+      "ru": "их окно́",
+      "fr": "leur fenêtre",
+      "category": "Les possessifs",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 201,
+      "ru": "их кни́ги",
+      "fr": "leurs livres",
+      "category": "Les possessifs",
+      "source": "possessifs_genre"
+    },
+    {
+      "id": 202,
+      "ru": "Э́то мой дом.",
+      "fr": "C’est ma maison.",
+      "category": "Être au présent",
+      "source": "devoirs3"
+    },
+    {
+      "id": 203,
+      "ru": "Э́то фо́то.",
+      "fr": "C’est une photo.",
+      "category": "Être au présent",
+      "source": "devoirs3"
+    },
+    {
+      "id": 204,
+      "ru": "Он до́ма.",
+      "fr": "Il est à la maison.",
+      "category": "Être au présent",
+      "source": "devoirs3"
+    },
+    {
+      "id": 205,
+      "ru": "Она́ в Москве́.",
+      "fr": "Elle est à Moscou.",
+      "category": "Être au présent",
+      "source": "devoirs3"
+    },
+    {
+      "id": 206,
+      "ru": "Она́ до́ма.",
+      "fr": "Elle est à la maison.",
+      "category": "Être au présent",
+      "source": "devoirs3"
+    },
+    {
+      "id": 207,
+      "ru": "Э́то но́вая ко́фта.",
+      "fr": "C’est un nouveau gilet.",
+      "category": "Être au présent",
+      "source": "devoirs3"
+    },
+    {
+      "id": 208,
+      "ru": "Э́то Москва́.",
+      "fr": "C’est Moscou.",
+      "category": "Être au présent",
+      "source": "devoirs3"
+    },
+    {
+      "id": 209,
+      "ru": "Ма́ма до́ма.",
+      "fr": "Maman est à la maison.",
+      "category": "Être au présent",
+      "source": "devoirs3"
+    },
+    {
+      "id": 210,
+      "ru": "Тут окно́.",
+      "fr": "Ici, il y a une fenêtre.",
+      "category": "Être au présent",
+      "source": "devoirs3"
+    },
+    {
+      "id": 211,
+      "ru": "Банк там.",
+      "fr": "La banque est là-bas.",
+      "category": "Être au présent",
+      "source": "devoirs3"
+    },
+    {
+      "id": 212,
+      "ru": "Э́то моя́ ко́мната.",
+      "fr": "C’est ma chambre.",
+      "category": "Être au présent",
+      "source": "devoirs3"
+    },
+    {
+      "id": 213,
+      "ru": "Там фонта́н.",
+      "fr": "Là-bas, il y a une fontaine.",
+      "category": "Être au présent",
+      "source": "devoirs3"
+    },
+    {
+      "id": 214,
+      "ru": "Моя́ ма́ма до́ма.",
+      "fr": "Ma maman est à la maison.",
+      "category": "Être au présent",
+      "source": "devoirs3"
+    },
+    {
+      "id": 215,
+      "ru": "Там сад.",
+      "fr": "Là-bas, il y a un jardin.",
+      "category": "Être au présent",
+      "source": "devoirs3"
+    },
+    {
+      "id": 216,
+      "ru": "Я — преподава́тель.",
+      "fr": "Je suis professeur.",
+      "category": "Être au présent",
+      "source": "etre_avoir"
+    },
+    {
+      "id": 217,
+      "ru": "Мы до́ма.",
+      "fr": "Nous sommes à la maison.",
+      "category": "Être au présent",
+      "source": "etre_avoir"
+    },
+    {
+      "id": 218,
+      "ru": "Я до́ма.",
+      "fr": "Je suis à la maison.",
+      "category": "Être au présent",
+      "source": "etre_avoir"
+    },
+    {
+      "id": 219,
+      "ru": "Ты гото́в?",
+      "fr": "Tu es prêt ? (à un homme)",
+      "category": "Être au présent",
+      "source": "etre_avoir"
+    },
+    {
+      "id": 220,
+      "ru": "Он экспе́рт.",
+      "fr": "Il est expert.",
+      "category": "Être au présent",
+      "source": "etre_avoir"
+    },
+    {
+      "id": 221,
+      "ru": "Мы в о́фисе.",
+      "fr": "Nous sommes au bureau.",
+      "category": "Être au présent",
+      "source": "etre_avoir"
+    },
+    {
+      "id": 222,
+      "ru": "Вы здесь?",
+      "fr": "Vous êtes ici ?",
+      "category": "Être au présent",
+      "source": "etre_avoir"
+    },
+    {
+      "id": 223,
+      "ru": "Они́ друзья́.",
+      "fr": "Ils sont amis.",
+      "category": "Être au présent",
+      "source": "etre_avoir"
+    },
+    {
+      "id": 224,
+      "ru": "Я — студе́нт.",
+      "fr": "Je suis étudiant. (homme)",
+      "category": "Être au présent",
+      "source": "etre_avoir"
+    },
+    {
+      "id": 225,
+      "ru": "У меня́ есть брат.",
+      "fr": "J’ai un frère.",
+      "category": "Avoir au présent",
+      "source": "devoirs3"
+    },
+    {
+      "id": 226,
+      "ru": "У тебя́ есть зонт.",
+      "fr": "Tu as un parapluie.",
+      "category": "Avoir au présent",
+      "source": "devoirs3"
+    },
+    {
+      "id": 227,
+      "ru": "У него́ есть па́спорт.",
+      "fr": "Il a un passeport.",
+      "category": "Avoir au présent",
+      "source": "devoirs3"
+    },
+    {
+      "id": 228,
+      "ru": "У неё есть фо́то.",
+      "fr": "Elle a une photo.",
+      "category": "Avoir au présent",
+      "source": "devoirs3"
+    },
+    {
+      "id": 229,
+      "ru": "У нас есть зонт.",
+      "fr": "Nous avons un parapluie.",
+      "category": "Avoir au présent",
+      "source": "devoirs3"
+    },
+    {
+      "id": 230,
+      "ru": "У нас есть два до́ма.",
+      "fr": "Nous avons deux maisons.",
+      "category": "Avoir au présent",
+      "source": "devoirs3"
+    },
+    {
+      "id": 231,
+      "ru": "У меня́ есть фо́то.",
+      "fr": "J’ai une photo.",
+      "category": "Avoir au présent",
+      "source": "devoirs3"
+    },
+    {
+      "id": 232,
+      "ru": "У меня́ есть прое́кт.",
+      "fr": "J’ai un projet.",
+      "category": "Avoir au présent",
+      "source": "etre_avoir"
+    },
+    {
+      "id": 233,
+      "ru": "У тебя́ есть вре́мя?",
+      "fr": "Tu as du temps ?",
+      "category": "Avoir au présent",
+      "source": "etre_avoir"
+    },
+    {
+      "id": 234,
+      "ru": "У него́ есть маши́на.",
+      "fr": "Il a une voiture.",
+      "category": "Avoir au présent",
+      "source": "etre_avoir"
+    },
+    {
+      "id": 235,
+      "ru": "У неё есть иде́я.",
+      "fr": "Elle a une idée.",
+      "category": "Avoir au présent",
+      "source": "etre_avoir"
+    },
+    {
+      "id": 236,
+      "ru": "У нас есть реше́ние.",
+      "fr": "Nous avons une solution.",
+      "category": "Avoir au présent",
+      "source": "etre_avoir"
+    },
+    {
+      "id": 237,
+      "ru": "У вас есть вопро́с?",
+      "fr": "Vous avez une question ?",
+      "category": "Avoir au présent",
+      "source": "etre_avoir"
+    },
+    {
+      "id": 238,
+      "ru": "У них есть о́пыт.",
+      "fr": "Ils ont de l’expérience.",
+      "category": "Avoir au présent",
+      "source": "etre_avoir"
+    },
+    {
+      "id": 239,
+      "ru": "У меня́ есть кни́га.",
+      "fr": "J’ai un livre.",
+      "category": "Avoir au présent",
+      "source": "etre_avoir"
+    },
+    {
+      "id": 240,
+      "ru": "Э́то вода́.",
+      "fr": "C’est de l’eau.",
+      "category": "Phrases et intonation",
+      "source": "lecon2_revision"
+    },
+    {
+      "id": 241,
+      "ru": "Э́то ва́за.",
+      "fr": "C’est un vase.",
+      "category": "Phrases et intonation",
+      "source": "lecon2_revision"
+    },
+    {
+      "id": 242,
+      "ru": "Она́ там.",
+      "fr": "Elle est là-bas.",
+      "category": "Phrases et intonation",
+      "source": "lecon2_revision"
+    },
+    {
+      "id": 243,
+      "ru": "Она́ одна́.",
+      "fr": "Elle est seule.",
+      "category": "Phrases et intonation",
+      "source": "lecon2_revision"
+    },
+    {
+      "id": 244,
+      "ru": "Э́то су́мка.",
+      "fr": "C’est un sac.",
+      "category": "Phrases et intonation",
+      "source": "lecon2_revision"
+    },
+    {
+      "id": 245,
+      "ru": "Э́то зонт.",
+      "fr": "C’est un parapluie.",
+      "category": "Phrases et intonation",
+      "source": "lecon2_revision"
+    },
+    {
+      "id": 246,
+      "ru": "Вот фо́то.",
+      "fr": "Voici une photo.",
+      "category": "Phrases et intonation",
+      "source": "lecon2_revision"
+    },
+    {
+      "id": 247,
+      "ru": "Э́та поэ́ма",
+      "fr": "ce poème",
+      "category": "Phrases et intonation",
+      "source": "lecon2_revision"
+    },
+    {
+      "id": 248,
+      "ru": "Э́тот поэ́т",
+      "fr": "ce poète",
+      "category": "Phrases et intonation",
+      "source": "lecon2_revision"
+    },
+    {
+      "id": 249,
+      "ru": "два дру́га",
+      "fr": "deux amis",
+      "category": "Phrases et intonation",
+      "source": "lecon2_revision"
+    },
+    {
+      "id": 250,
+      "ru": "два бра́та",
+      "fr": "deux frères",
+      "category": "Phrases et intonation",
+      "source": "lecon2_revision"
+    },
+    {
+      "id": 251,
+      "ru": "два уро́ка",
+      "fr": "deux leçons",
+      "category": "Phrases et intonation",
+      "source": "lecon2_revision"
+    },
+    {
+      "id": 252,
+      "ru": "два ра́за",
+      "fr": "deux fois",
+      "category": "Phrases et intonation",
+      "source": "lecon2_revision"
+    },
+    {
+      "id": 253,
+      "ru": "два до́ма",
+      "fr": "deux maisons",
+      "category": "Phrases et intonation",
+      "source": "lecon2_revision"
+    },
+    {
+      "id": 254,
+      "ru": "два го́да",
+      "fr": "deux ans",
+      "category": "Phrases et intonation",
+      "source": "lecon2_revision"
+    },
+    {
+      "id": 255,
+      "ru": "поэ́ма",
+      "fr": "le poème",
+      "category": "Premiers mots",
+      "source": "lecon2_revision"
+    },
+    {
+      "id": 256,
+      "ru": "поэ́тому",
+      "fr": "c’est pourquoi",
+      "category": "Petits mots",
+      "source": "lecon2_revision"
+    },
+    {
+      "id": 257,
+      "ru": "эта́п",
+      "fr": "l’étape",
+      "category": "Premiers mots",
+      "source": "lecon2_revision"
+    },
+    {
+      "id": 258,
+      "ru": "экза́мен",
+      "fr": "l’examen",
+      "category": "Premiers mots",
+      "source": "lecon2_revision"
+    },
+    {
+      "id": 259,
+      "ru": "в",
+      "fr": "dans / à (intérieur)",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 260,
+      "ru": "на",
+      "fr": "sur / à (surface, activité)",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 261,
+      "ru": "у",
+      "fr": "près de / chez",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 262,
+      "ru": "к",
+      "fr": "vers / chez (destination)",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 263,
+      "ru": "из",
+      "fr": "de (provenance de l’intérieur)",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 264,
+      "ru": "от",
+      "fr": "de / depuis (point de départ)",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 265,
+      "ru": "до",
+      "fr": "jusqu’à",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 266,
+      "ru": "без",
+      "fr": "sans",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 267,
+      "ru": "для",
+      "fr": "pour (destinataire)",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 268,
+      "ru": "с",
+      "fr": "avec / de (selon le cas)",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 269,
+      "ru": "под",
+      "fr": "sous",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 270,
+      "ru": "над",
+      "fr": "au-dessus de",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 271,
+      "ru": "пе́ред",
+      "fr": "devant / avant",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 272,
+      "ru": "за",
+      "fr": "derrière / pour (selon le contexte)",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 273,
+      "ru": "о",
+      "fr": "au sujet de / à propos de",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 274,
+      "ru": "по",
+      "fr": "le long de / selon (selon le contexte)",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 275,
+      "ru": "в до́ме",
+      "fr": "dans la maison (position)",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 276,
+      "ru": "в дом",
+      "fr": "dans la maison (destination)",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 277,
+      "ru": "на столе́",
+      "fr": "sur la table (position)",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 278,
+      "ru": "на стол",
+      "fr": "sur la table (destination)",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 279,
+      "ru": "у до́ма",
+      "fr": "près de la maison",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 280,
+      "ru": "у меня́",
+      "fr": "chez moi",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 281,
+      "ru": "к до́му",
+      "fr": "vers la maison",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 282,
+      "ru": "из до́ма",
+      "fr": "de la maison (depuis l’intérieur)",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 283,
+      "ru": "от до́ма",
+      "fr": "depuis la maison (point de départ)",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 284,
+      "ru": "до до́ма",
+      "fr": "jusqu’à la maison",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 285,
+      "ru": "без са́хара",
+      "fr": "sans sucre",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 286,
+      "ru": "для дру́га",
+      "fr": "pour un ami",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 287,
+      "ru": "с дру́гом",
+      "fr": "avec un ami",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 288,
+      "ru": "со стола́",
+      "fr": "de la table (provenance)",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 289,
+      "ru": "под столо́м",
+      "fr": "sous la table (position)",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 290,
+      "ru": "под стол",
+      "fr": "sous la table (destination)",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 291,
+      "ru": "над столо́м",
+      "fr": "au-dessus de la table",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 292,
+      "ru": "пе́ред до́мом",
+      "fr": "devant la maison",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 293,
+      "ru": "за до́мом",
+      "fr": "derrière la maison (position)",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 294,
+      "ru": "за дом",
+      "fr": "derrière la maison (destination)",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 295,
+      "ru": "о дру́ге",
+      "fr": "au sujet d’un ami",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    },
+    {
+      "id": 296,
+      "ru": "по у́лице",
+      "fr": "le long de la rue",
+      "category": "Les prépositions",
+      "source": "prepositions"
+    }
+  ]
+}

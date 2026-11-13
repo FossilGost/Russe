@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}{{ 'Créer mon compte' if registering else 'Me connecter' }}{% endblock %}
+{% block content %}
+<div class="auth-layout">
+  <div class="page-heading"><div><p class="eyebrow">TON ESPACE PERSONNEL</p><h1>{{ 'Un compte, tous tes progrès.' if registering else 'Retrouve ton parcours.' }}</h1><p>Tes préférences, tes mots et ta progression t’attendent sur chaque appareil.</p></div></div>
+  <form class="panel settings-form auth-form" method="post">
+    <input type="hidden" name="csrf" value="{{ csrf_token }}">
+    <h2>{{ 'Créer mon compte' if registering else 'Me connecter' }}</h2>
+    {% if error %}<p class="auth-error" role="alert">{{ error }}</p>{% endif %}
+    <label for="username">Identifiant</label><input id="username" name="username" autocomplete="username" autocapitalize="none" spellcheck="false" minlength="3" maxlength="40" value="{{ request.form.get('username','') }}" required>
+    {% if registering %}<p class="tiny">3 à 40 caractères : lettres a–z, chiffres, point, tiret ou _. Commence par une lettre ou un chiffre.</p>{% endif %}
+    <label for="password">Mot de passe</label><input id="password" type="password" name="password" autocomplete="{{ 'new-password' if registering else 'current-password' }}" {% if registering %}minlength="15"{% endif %} maxlength="128" required>
+    {% if registering %}<p class="tiny">15 caractères minimum. Une phrase de plusieurs mots est facile à retenir.</p><label for="confirmation">Confirmer le mot de passe</label><input id="confirmation" type="password" name="confirmation" autocomplete="new-password" minlength="15" maxlength="128" required>{% endif %}
+    <button class="button primary">{{ 'Créer mon compte' if registering else 'Me connecter' }} →</button>
+    {% if registering %}<a class="text-button" href="{{ url_for('login') }}">J’ai déjà un compte →</a>{% elif allow_registration %}<a class="text-button" href="{{ url_for('register') }}">Créer un compte →</a>{% endif %}
+  </form>
+  <p class="tiny">Tes réponses et tes réglages sont enregistrés automatiquement sur le serveur. En cas de mot de passe oublié, contacte le responsable du site pour rétablir ton accès.</p>
+</div>
+{% endblock %}

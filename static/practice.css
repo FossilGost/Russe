@@ -1,0 +1,42 @@
+/* Shared language markers use CSS flags so they also render on Windows. */
+.language-badge{display:inline-flex;align-items:center;gap:9px;color:var(--muted);font-size:11px;font-weight:600;line-height:1.4;letter-spacing:.2px}
+.language-flag{display:inline-block;width:25px;height:17px;flex-shrink:0;border-radius:3px;box-shadow:0 0 0 1px #8998ad55;overflow:hidden}
+.flag-ru{background:linear-gradient(to bottom,#fff 0 33.333%,#2454b8 33.333% 66.666%,#df3346 66.666%)}
+.flag-fr{background:linear-gradient(to right,#2454b8 0 33.333%,#fff 33.333% 66.666%,#df3346 66.666%)}
+
+/* One reading column: Russian, French, then the learner's answer. */
+.practice-card{padding:30px 36px}
+.practice-status{min-height:1.6em;margin:0 auto 6px;max-width:1080px}
+.practice-card .practice-meta{margin-bottom:26px}
+.practice-card>.eyebrow{text-align:left;margin:0 0 18px;font-size:10px;letter-spacing:1.6px}
+.word-pair{margin:0 0 26px;text-align:left}
+.word-row{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:4px 0 22px}
+.word-content{min-width:0;flex:1}
+.word-content>.language-badge{margin-bottom:9px}
+.word-pair .question-word{font-size:clamp(30px,3.3vw,42px);line-height:1.3;letter-spacing:-.5px;margin:0;color:var(--ink)}
+.word-row .listen-button{display:inline-flex;align-items:center;gap:7px;flex-shrink:0;margin:18px 0 0;padding:10px 15px;font-size:12px;min-height:40px}
+.word-translation{border-top:1px solid var(--border);padding:19px 0 0}
+.word-translation strong{display:block;font-size:clamp(26px,2.8vw,34px);font-weight:750;line-height:1.35;color:var(--accent);overflow-wrap:anywhere}
+.practice-card .input-label{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 10px}
+.practice-card .input-label>span:last-child{font-size:11px;color:var(--muted);font-weight:400}
+.practice-card #writing-status{margin:0 0 16px;font-size:11px}
+.practice-card .russian-input{padding:16px 18px;font-size:24px}
+.practice-card .keyboard-wrap{background:transparent;padding:13px 0;border:0;border-top:1px solid var(--border);border-bottom:1px solid var(--border);border-radius:0;margin:18px 0 0}
+.practice-card .keyboard-wrap summary{font-size:11px}
+.practice-card .keyboard{padding:6px 0}
+.practice-card .answer-bottom{border-top:0;margin-top:20px;padding-top:0}
+.answer-language{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:0 0 12px;text-align:left}
+.answer-language>span{font-size:11px;color:var(--muted)}
+.translation-highlight .language-badge{margin-bottom:2px}
+
+@media(max-width:540px){
+  .practice-card{padding:22px 18px}
+  .practice-card .practice-meta{margin-bottom:22px}
+  .word-row{gap:12px;flex-wrap:wrap}
+  .word-content{flex-basis:100%}
+  .word-row .listen-button{margin:0;padding:8px 12px;min-height:36px}
+  .word-translation{padding-top:17px}
+  .word-pair{margin-bottom:22px}
+  .practice-card .input-label{flex-wrap:wrap;gap:6px}
+  .language-flag{width:23px;height:16px}
+}

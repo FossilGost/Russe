@@ -1,0 +1,10 @@
+.venv/
+.venv-audit/
+tmp/
+__pycache__/
+instance/
+*.pyc
+.env
+.env.*
+!.env.example
+backups/

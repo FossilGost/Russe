@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% from 'illustration.html' import illustrate with context %}
+{% block title %}{{ course.title }} · Cours{% endblock %}
+{% block content %}
+<a class="text-button" href="{{ url_for('courses') }}">← Tous les cours</a>
+<div class="page-heading"><div><p class="eyebrow">COURS {{ number }} / {{ count }} · LES BASES DU RUSSE</p><h1>{{ course.title }}</h1><p>{{ course.goal }}</p></div></div>
+<div class="lesson-layout">
+  <article class="panel lesson-reading" aria-label="Explications du cours">
+    {% for title, text in course.sections %}<section><span class="tiny">REPÈRE {{ loop.index }}</span><h2>{{ title }}</h2><p>{{ text }}</p></section>{% endfor %}
+    <div class="lesson-tip"><h2>Pour retenir</h2><p>{{ course.tip }}</p></div>
+    <section class="lesson-check"><h2>À toi de vérifier</h2><p>{{ course.question }}</p><details><summary>Voir la réponse et l’explication</summary><p>{{ course.answer }}</p></details></section>
+  </article>
+  <aside class="lesson-examples"><div class="section-title"><h2>Écoute et répète</h2></div>
+    {% for word in examples %}<div class="panel lesson-example">{{ illustrate(word) }}<h3 lang="ru">{{ word.ru }}</h3><p>{{ word.fr }}</p><div class="speech-actions">{% for rate, label in [('normal','Écouter'),('slow','Écouter lentement')] %}<button class="sound-icon" type="button" data-speak="{{ word.ru }}" data-audio-url="{{ url_for('audio',word_id=word.id) }}" {% if rate=='slow' %}data-speech-rate="slow"{% endif %} aria-label="{{ label }} : {{ word.ru }}">{{ label }}</button>{% endfor %}</div><details class="word-source"><summary>Source de l’exemple</summary><p>{{ sources[word.source] }}</p></details></div>{% endfor %}
+    <p id="speech-status" class="tiny" role="status"></p>
+    {% if course.category %}<section class="panel lesson-practice">{% if not learning.topics[course.category].unlocked %}<p class="unlock-note">&#128274; Quiz disponible &agrave; {{ learning.topics[course.category].xp }} XP &middot; encore {{ learning.topics[course.category].remaining }} XP.</p>{% endif %}<h2>On passe à la pratique ?</h2><p>Retrouve les mots de ce thème dans un entraînement adapté à ton palier.</p><form method="post" action="{{ url_for('start') }}"><input type="hidden" name="csrf" value="{{ csrf_token }}"><input type="hidden" name="mode" value="{{ practice_mode }}"><input type="hidden" name="category" value="{{ course.category }}"><button class="button primary" {% if not learning.topics[course.category].unlocked %}disabled{% endif %}>M’entraîner sur ce thème →</button></form><a class="text-button" href="{{ url_for('vocabulary',category=course.category) }}">Voir tous les mots du thème →</a></section>{% else %}<a class="button primary" href="{{ url_for('alphabet') }}">Retrouver les 33 lettres →</a>{% endif %}
+  </aside>
+</div>
+<div class="course-completion">{% if completed %}<p class="completed-course">✓ Tu as terminé ce cours. Tu peux le relire quand tu veux.</p>{% else %}<form method="post" action="{{ url_for('complete_course',slug=course.slug) }}"><input type="hidden" name="csrf" value="{{ csrf_token }}"><button class="button primary">✓ Marquer ce cours comme terminé</button></form>{% endif %}</div>
+<nav class="lesson-pagination" aria-label="Parcourir les cours">{% if previous %}<a class="button outline" href="{{ url_for('course',slug=previous.slug) }}">← {{ previous.title }}</a>{% endif %}{% if following %}<a class="button primary" href="{{ url_for('course',slug=following.slug) }}">{{ following.title }} →</a>{% else %}<a class="button primary" href="{{ url_for('courses') }}">Revenir à tous les cours →</a>{% endif %}</nav>
+<p class="course-provenance">Explications et question : complément pédagogique Slovo. Exemples : vocabulaire déjà présent dans ton carnet.</p>
+{% endblock %}

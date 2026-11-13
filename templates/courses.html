@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Cours{% endblock %}
+{% block content %}
+<div class="page-heading"><div><p class="eyebrow">УРОКИ · APPRENDRE PAS À PAS</p><h1>Les bases, simplement.</h1><p>Un thème à la fois : comprends, écoute, puis entraîne-toi.</p></div><span class="count-tag">{{ courses|length }} cours faciles</span></div>
+<section class="panel course-welcome"><div><h2>Un petit cours, un vrai repère.</h2><p>Suis l’ordre proposé pour commencer, ou choisis le thème dont tu as besoin. Chaque cours contient des explications courtes, des exemples à écouter et une question pour vérifier que tu as compris.</p></div><a class="button primary" href="{{ url_for('course',slug=courses[0].slug) }}">Commencer par les bases →</a></section>
+<div class="section-title"><h2>Choisis ton thème</h2><span>{{ completed|length }} / {{ courses|length }} COURS TERMINÉS</span></div>
+<div class="course-grid">
+{% for course in courses %}
+<a class="panel course-card" href="{{ url_for('course',slug=course.slug) }}"><span class="course-number">{{ '%02d'|format(loop.index) }}</span><span class="tiny">{{ 'Fondations' if not course.category else course.category }}</span><h2>{{ course.title }}</h2><p>{{ course.goal }}</p>{% if course.slug in completed %}<span class="completed-course">✓ Terminé</span>{% endif %}<span class="course-open">Lire le cours <span aria-hidden="true">→</span></span></a>
+{% endfor %}
+</div>
+<p class="course-provenance">Compléments pédagogiques rédigés pour expliquer les notions et les mots déjà présents dans Slovo. Les exemples à écouter viennent du carnet existant. <a href="{{ url_for('preferences') }}#sources">Voir les sources du vocabulaire →</a></p>
+{% endblock %}

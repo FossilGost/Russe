@@ -1,0 +1,49 @@
+<details class="panel course-notes" id="course-notes">
+  <summary>Repères de cours : être, avoir, possessifs, prépositions et intonation</summary>
+  <div class="course-notes-grid">
+    <section>
+      <h2>Les prépositions</h2>
+      <p>Une préposition indique un rapport entre les mots : lieu, destination, origine, accompagnement… En russe, elle impose aussi un cas au nom qui suit. Apprends les petits groupes de mots en entier, pas seulement la traduction de la préposition.</p>
+      <p><span lang="ru">в</span> et <span lang="ru">на</span> prennent généralement le prépositif pour le lieu où l’on est : <span lang="ru">в доме, на столе</span>. Pour une destination, elles prennent l’accusatif : <span lang="ru">в дом, на стол</span>. C’est la destination qui compte ; tout mouvement n’entraîne pas automatiquement l’accusatif.</p>
+      <p><span lang="ru">у, из, от, до, без, для</span> prennent le génitif ; <span lang="ru">к</span> prend le datif. Compare <span lang="ru">из дома</span> (depuis l’intérieur de la maison) et <span lang="ru">от дома</span> (depuis la maison comme point de départ).</p>
+      <p><span lang="ru">с другом</span> signifie « avec un ami » : <span lang="ru">с</span> + instrumental. Dans <span lang="ru">со стола</span> (« de la table », provenance), <span lang="ru">со</span> est une variante de <span lang="ru">с</span>, suivie du génitif.</p>
+      <p>Pour la position, <span lang="ru">под, над, перед, за</span> prennent l’instrumental : <span lang="ru">под столом</span>. Pour une destination, <span lang="ru">под</span> et <span lang="ru">за</span> prennent l’accusatif : <span lang="ru">под стол, за дом</span>. Pour parler d’un sujet, <span lang="ru">о</span> prend le prépositif : <span lang="ru">о друге</span>. Dans <span lang="ru">по улице</span> (le long de la rue), <span lang="ru">по</span> prend le datif.</p>
+      <p class="tiny">Les traductions présentées sont des usages courants, pas tous les sens possibles. Source : {{ sources.prepositions }}</p>
+    </section>
+    <section>
+      <h2>Être au présent</h2>
+      <p>Dans une phrase simple d’identité, d’état ou de lieu au présent, on omet généralement « être » : <span lang="ru">Я — студент.</span> (Je suis étudiant.) ; <span lang="ru">Мы дома.</span> (Nous sommes à la maison.). Ce n’est pas une règle pour tous les temps ni tous les emplois du verbe.</p>
+      <p><span lang="ru">Ты готов?</span> signifie « Tu es prêt ? » si tu parles à un homme ; à une femme : <span lang="ru">Ты готова?</span>.</p>
+      <p class="tiny">Source : {{ sources.etre_avoir }}</p>
+    </section>
+    <section>
+      <h2>Avoir au présent</h2>
+      <p>Pour annoncer une possession, on utilise souvent <span lang="ru">у + personne au génitif + есть + objet</span>. Exemple : <span lang="ru">У меня есть брат.</span> (J’ai un frère.). Ce n’est pas la conjugaison du verbe <span lang="ru">иметь</span>.</p>
+      <p lang="ru">У меня · у тебя · у него · у неё · у нас · у вас · у них</p>
+      <p>Ces formes correspondent à « chez moi, chez toi, chez lui, chez elle, chez nous, chez vous, chez eux ». Avec <span lang="ru">есть</span> et un objet, elles permettent d’exprimer « j’ai, tu as… ». Le mot <span lang="ru">есть</span> peut être omis selon le contexte ; il ne traduit pas tous les emplois français d’« avoir ».</p>
+      <p class="tiny">Sources : {{ sources.etre_avoir }} ; {{ sources.devoirs3 }}</p>
+    </section>
+    <section>
+      <h2>Les possessifs et le genre</h2>
+      <p>Au nominatif, <span lang="ru">мой, твой, наш, ваш</span> s’accordent avec le nom russe désignant l’objet possédé, selon son genre et son nombre. Le genre français peut être différent : <span lang="ru">мой стул</span> = ma chaise ; <span lang="ru">моя сумка</span> = mon sac.</p>
+      <div class="table-scroll"><table>
+        <caption>Formes au nominatif</caption>
+        <thead><tr><th scope="col">Possesseur</th><th scope="col">Masculin</th><th scope="col">Féminin</th><th scope="col">Neutre</th><th scope="col">Pluriel</th></tr></thead>
+        <tbody>
+          {% for owner, forms in [('je', ['мой','моя','моё','мои']), ('tu', ['твой','твоя','твоё','твои']), ('nous', ['наш','наша','наше','наши']), ('vous', ['ваш','ваша','ваше','ваши'])] %}
+          <tr><th scope="row">{{ owner }}</th>{% for form in forms %}<td lang="ru">{{ form }}</td>{% endfor %}</tr>
+          {% endfor %}
+        </tbody>
+      </table></div>
+      <p>Les possessifs <span lang="ru">его</span> (à lui), <span lang="ru">её</span> (à elle) et <span lang="ru">их</span> (à eux/elles) sont invariables. Ils peuvent aussi correspondre à « ses » et « leurs » en français.</p>
+      <p>Les terminaisons donnent des indices, avec des exceptions : <span lang="ru">папа</span> est masculin malgré sa finale en <span lang="ru">-а</span>. Le pluriel ne se limite pas aux mots en <span lang="ru">-и</span> : <span lang="ru">дома</span> signifie aussi « maisons ».</p>
+      <p class="tiny">Source : {{ sources.possessifs_genre }}</p>
+    </section>
+    <section>
+      <h2>Intonation et rythme</h2>
+      <p>Dans les modèles de la leçon 2, l’affirmation fait descendre le ton sur la syllabe accentuée du mot mis en relief. Dans la question sans mot interrogatif, le ton monte sur cette syllabe, puis retombe sur les syllabes suivantes. La montée ne se place donc pas systématiquement en fin de mot.</p>
+      <p>Le <span lang="ru">р</span> se roule avec la pointe de la langue. Dans les mots de trois syllabes, repère l’accent : <span lang="ru">сторона́, рабо́та, ко́мната</span>. Le bouton « Écouter lentement » aide à entendre les mots ; la voix synthétique ne reproduit pas toujours exactement l’intonation pédagogique.</p>
+      <p class="tiny">Source : {{ sources.lecon2_revision }}</p>
+    </section>
+  </div>
+</details>

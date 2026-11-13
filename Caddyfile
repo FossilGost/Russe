@@ -1,0 +1,7 @@
+{$SLOVO_DOMAIN} {
+    request_body {
+        max_size 16KB
+    }
+    encode zstd gzip
+    reverse_proxy app:8080
+}

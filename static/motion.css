@@ -1,0 +1,44 @@
+/* Account controls stay reachable at narrow widths and short window heights. */
+.sidebar{overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}
+.sidebar>*{flex-shrink:0}
+.header-logout{flex-shrink:0;margin:0}
+.topbar{height:auto;min-height:87px;flex-wrap:wrap;gap:12px;padding-top:12px;padding-bottom:12px}
+.logout-button{background:var(--coral-soft);color:var(--coral);border:1px solid var(--coral);white-space:nowrap;font-size:14px;padding:10px 14px;min-height:44px;gap:8px}
+.logout-button:hover{background:var(--red-soft);box-shadow:0 4px 14px var(--glow-one)}
+.sidebar-bottom .logout-button{width:100%;margin-top:8px}
+.autosave-status{position:sticky;top:8px;z-index:2;padding:12px 15px;border-radius:12px;background:var(--teal-soft);color:var(--teal);font-size:14px;line-height:1.5;border:1px solid var(--teal)}
+.autosave-status[data-state=saving]{background:var(--sky-soft);color:var(--sky);border-color:var(--sky)}
+.autosave-status[data-state=error]{background:var(--warning-bg);color:var(--warning);border-color:var(--warning)}
+button[hidden]{display:none!important}
+#settings-retry{margin-bottom:14px}
+.vocabulary-pages{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;margin:18px 0;color:var(--muted);font-size:14px}
+.settings-form input,.settings-form select{scroll-margin-top:90px}
+@media(min-width:1440px){.topbar{min-height:94px}.logout-button{font-size:15px;min-height:48px}}
+@media(max-width:780px){.topbar{min-height:70px}.header-logout{margin-left:auto}.sidebar{overflow:visible}.topbar .volume-control{order:3;flex-basis:100%;margin:0;justify-content:flex-end}.topbar .volume-control input{flex:1;max-width:180px}}
+@media(max-height:850px) and (min-width:781px){.sidebar-tip{display:none}.sidebar-bottom{padding-top:12px}.sidebar .brand-caption{margin-bottom:18px}}
+@media(max-width:460px){.topbar{gap:8px;padding-left:16px;padding-right:16px}.logout-button{font-size:12px;padding:8px 10px}.top-stats{gap:10px}.topbar>span{font-size:11px}}
+
+/* Short entrance and interaction animations preserve the fast practice flow. */
+@keyframes slovo-page-in{from{opacity:.35}to{opacity:1}}
+@keyframes slovo-card-in{from{opacity:0;transform:translateY(9px) scale(.99)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes slovo-result-in{from{opacity:0;transform:translateY(12px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes slovo-saved{0%{box-shadow:0 0 0 0 var(--teal-soft)}100%{box-shadow:0 0 0 10px transparent}}
+@media(prefers-reduced-motion:no-preference){
+  body,.sidebar,.topbar,.panel,.practice-card,.result-card{transition:background-color .25s,color .2s,border-color .25s}
+  main{animation:slovo-page-in .18s ease-out}
+  .exercise-card,.topic-card,.word-card,.letter-card,.learning-path,.lesson-reading,.settings-form{animation:slovo-card-in .28s cubic-bezier(.2,.7,.3,1) backwards}
+  .exercise-card:nth-child(2),.topic-card:nth-child(3n+2){animation-delay:35ms}
+  .exercise-card:nth-child(3),.topic-card:nth-child(3n){animation-delay:70ms}
+  .exercise-card:nth-child(4){animation-delay:100ms}
+  .exercise-card:nth-child(5){animation-delay:130ms}
+  .practice-card{animation:slovo-card-in .2s ease-out both}
+  .result-card,.unlock-celebration{animation:slovo-result-in .3s cubic-bezier(.2,.8,.3,1) both}
+  .autosave-status[data-state=saved]{animation:slovo-saved .4s ease-out}
+  .button,.choice,.nav-link,.theme-option,.topic-card,.word-card,.letter-card,.key-row button{transition:background-color .2s,color .2s,border-color .2s,box-shadow .2s,transform .18s}
+  .theme-option:hover,.word-card:hover{transform:translateY(-2px)}
+  .button:active,.key-row button:active{transform:translateY(1px) scale(.98)}
+  .choice:has(input:checked){transform:translateY(-2px);box-shadow:0 4px 14px var(--glow-one)}
+  .theme-option:has(input:checked){box-shadow:0 0 0 3px var(--violet-soft)}
+  .topic-card:not(.quiz-locked):hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+}
+@media(prefers-reduced-motion:reduce){main,.practice-card,.result-card,.unlock-celebration,.autosave-status{animation:none!important;transition:none!important}}

@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% from 'illustration.html' import illustrate with context %}
+{% block title %}L’alphabet{% endblock %}
+{% block content %}
+<div class="page-heading"><div><p class="eyebrow">АЗБУКА · LES FONDATIONS</p><h1>33 lettres. Un nouveau monde.</h1><p>Apprivoise le cyrillique, une lettre à la fois.</p></div><span class="count-tag">А → Я</span></div>
+<section class="alphabet-intro"><span>Аа</span><div><h2>Écoute la lettre, puis retrouve-la dans un mot.</h2><p>« Nom de la lettre » fait entendre son nom dans l’alphabet russe (par exemple бэ pour Б). Dans un mot, sa prononciation peut changer selon sa place et l’accent. Les indications françaises sont approximatives. Les signes ь et ъ n’ont pas de son seuls : le bouton prononce leur nom.</p></div></section>
+<p id="speech-status" class="alphabet-speech-status tiny" role="status" aria-live="polite"></p>
+<div class="alphabet-grid alphabet-audio-grid">
+{% for item in letters %}
+<article class="letter-card alphabet-audio-card">
+  <span class="letter-index">{{ loop.index }}</span>
+  <strong lang="ru">{{ item.letter }}<span>{{ item.letter|lower }}</span></strong><p>{{ item.sound }}</p>
+  <span class="letter-type">{{ 'voyelle' if item.letter in 'АЕЁИОУЫЭЮЯ' else 'signe' if item.letter in 'ЪЬ' else 'consonne' }}</span>
+  <div class="alphabet-letter-actions speech-actions">
+    <button class="sound-icon" type="button" data-speak="{{ item.name }}" data-audio-url="{{ url_for('letter_audio',letter=item.letter,kind='name') }}" aria-label="Écouter le nom de la lettre {{ item.letter }}">Nom de la lettre</button>
+    <button class="sound-icon" type="button" data-speak="{{ item.name }}" data-audio-url="{{ url_for('letter_audio',letter=item.letter,kind='name') }}" data-speech-rate="slow" aria-label="Écouter lentement le nom de la lettre {{ item.letter }}">Lent</button>
+  </div>
+  {% if item.letter in 'ЪЬ' %}<p class="alphabet-sign-note">Ce signe ne se prononce pas seul.</p>{% endif %}
+  <div class="alphabet-word-example">
+    {% if item.word %}{{ illustrate(item.word) }}{% endif %}
+    <span class="tiny">DANS UN MOT</span>
+    <h2 lang="ru" aria-label="{{ item.example }}">{% for part in item.parts %}{% if part.highlight %}<mark>{{ part.text }}</mark>{% else %}{{ part.text }}{% endif %}{% endfor %}</h2>
+    <p>{{ item.fr }}</p>
+    <div class="speech-actions">
+      {% for rate,label in [('normal','Écouter le mot'),('slow','Lent')] %}<button class="sound-icon" type="button" data-speak="{{ item.example }}" data-audio-url="{{ url_for('audio',word_id=item.word.id) if item.word else url_for('letter_audio',letter=item.letter,kind='example') }}" {% if rate=='slow' %}data-speech-rate="slow"{% endif %} aria-label="{{ 'Écouter lentement le mot' if rate=='slow' else label }} {{ item.example }}">{{ label }}</button>{% endfor %}
+    </div>
+    {% if not item.word %}<small>Complément pédagogique pour cette lettre.</small>{% endif %}
+  </div>
+</article>
+{% endfor %}
+</div><div class="panel alphabet-note"><h2>Trois petits repères</h2><p><strong>ь</strong> adoucit la consonne précédente. <strong>ъ</strong> sert de séparateur. <strong>ё</strong> est toujours accentué dans les mots usuels. Les accents aigus de ton carnet indiquent la syllabe à appuyer ; tu n’as pas besoin de les saisir dans les exercices.</p></div>
+{% endblock %}

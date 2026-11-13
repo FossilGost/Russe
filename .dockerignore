@@ -1,0 +1,13 @@
+.venv
+.venv-audit
+.git
+.env
+.env.*
+instance
+backups
+tmp
+__pycache__
+**/__pycache__
+*.pyc
+tests
+Sources.txt

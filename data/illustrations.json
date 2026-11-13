@@ -1,0 +1,890 @@
+{
+  "1": {
+    "caption": "Repère visuel : la maison"
+  },
+  "2": {
+    "caption": "Repère visuel : le pont"
+  },
+  "3": {
+    "caption": "Repère visuel : le jardin"
+  },
+  "4": {
+    "caption": "Repère visuel : la soupe"
+  },
+  "5": {
+    "caption": "Repère visuel : le sommeil, le rêve"
+  },
+  "6": {
+    "caption": "Repère visuel : le parapluie"
+  },
+  "7": {
+    "caption": "Repère visuel : la banque"
+  },
+  "8": {
+    "caption": "Repère visuel : le jus"
+  },
+  "9": {
+    "caption": "Repère visuel : le chat"
+  },
+  "10": {
+    "caption": "Repère visuel : le son"
+  },
+  "11": {
+    "caption": "Repère visuel : l’année"
+  },
+  "12": {
+    "caption": "Repère visuel : le gaz"
+  },
+  "13": {
+    "caption": "Repère visuel : l’eau"
+  },
+  "14": {
+    "caption": "Repère visuel : la fenêtre"
+  },
+  "15": {
+    "caption": "Repère visuel : la maman"
+  },
+  "16": {
+    "caption": "Repère visuel : le papa"
+  },
+  "17": {
+    "caption": "Repère visuel : la fontaine"
+  },
+  "18": {
+    "caption": "Repère visuel : le verre"
+  },
+  "19": {
+    "caption": "Repère visuel : la mode"
+  },
+  "20": {
+    "caption": "Repère visuel : il faut"
+  },
+  "21": {
+    "caption": "Repère visuel : beaucoup"
+  },
+  "22": {
+    "caption": "Repère visuel : le vase"
+  },
+  "23": {
+    "caption": "Repère visuel : le sac"
+  },
+  "24": {
+    "caption": "Repère visuel : elle"
+  },
+  "25": {
+    "caption": "Repère visuel : il / ça (neutre)"
+  },
+  "26": {
+    "caption": "Repère visuel : là-bas (direction)"
+  },
+  "27": {
+    "caption": "Repère visuel : depuis longtemps"
+  },
+  "28": {
+    "caption": "Repère visuel : où (direction)"
+  },
+  "29": {
+    "caption": "Repère visuel : quand"
+  },
+  "30": {
+    "caption": "Repère visuel : alors, dans ce cas"
+  },
+  "31": {
+    "caption": "Repère visuel : le wagon"
+  },
+  "32": {
+    "caption": "Repère visuel : la banane"
+  },
+  "33": {
+    "caption": "Repère visuel : ensuite"
+  },
+  "34": {
+    "caption": "Repère visuel : l’usine"
+  },
+  "35": {
+    "caption": "Repère visuel : l’est"
+  },
+  "36": {
+    "caption": "Repère visuel : le tableau"
+  },
+  "37": {
+    "caption": "Repère visuel : la lettre"
+  },
+  "38": {
+    "caption": "Repère visuel : l’ouest"
+  },
+  "39": {
+    "caption": "Repère visuel : l’atome"
+  },
+  "40": {
+    "caption": "Repère visuel : l’espace"
+  },
+  "41": {
+    "caption": "Repère visuel : la baignoire"
+  },
+  "42": {
+    "caption": "Repère visuel : la tonne"
+  },
+  "43": {
+    "caption": "Repère visuel : la caisse"
+  },
+  "44": {
+    "caption": "Repère visuel : la masse"
+  },
+  "45": {
+    "caption": "Repère visuel : la somme"
+  },
+  "46": {
+    "caption": "Repère visuel : le gilet"
+  },
+  "47": {
+    "caption": "Repère visuel : le dossier"
+  },
+  "48": {
+    "caption": "Repère visuel : la photo"
+  },
+  "49": {
+    "caption": "Repère visuel : Moscou"
+  },
+  "50": {
+    "caption": "Repère visuel : le poète"
+  },
+  "51": {
+    "caption": "Repère visuel : le travail"
+  },
+  "52": {
+    "caption": "Repère visuel : c’est / ceci"
+  },
+  "53": {
+    "caption": "Repère visuel : ici"
+  },
+  "54": {
+    "caption": "Repère visuel : là-bas"
+  },
+  "55": {
+    "caption": "Repère visuel : voici / voilà"
+  },
+  "56": {
+    "caption": "Repère visuel : la main"
+  },
+  "57": {
+    "caption": "Repère visuel : la rose"
+  },
+  "58": {
+    "caption": "Repère visuel : le frère"
+  },
+  "59": {
+    "caption": "Repère visuel : la route principale"
+  },
+  "60": {
+    "caption": "Repère visuel : le drame"
+  },
+  "61": {
+    "caption": "Repère visuel : mars"
+  },
+  "62": {
+    "caption": "Repère visuel : le tracteur"
+  },
+  "63": {
+    "caption": "Repère visuel : un ami"
+  },
+  "64": {
+    "caption": "Repère visuel : le sport"
+  },
+  "65": {
+    "caption": "Repère visuel : le transport"
+  },
+  "66": {
+    "caption": "Repère visuel : difficile"
+  },
+  "67": {
+    "caption": "Repère visuel : la carte"
+  },
+  "68": {
+    "caption": "Repère visuel : l’herbe"
+  },
+  "69": {
+    "caption": "Repère visuel : le pays"
+  },
+  "70": {
+    "caption": "Repère visuel : la montagne"
+  },
+  "71": {
+    "caption": "Repère visuel : demain"
+  },
+  "72": {
+    "caption": "Repère visuel : le matin"
+  },
+  "73": {
+    "caption": "Repère visuel : la question"
+  },
+  "74": {
+    "caption": "Repère visuel : la poche"
+  },
+  "75": {
+    "caption": "Repère visuel : la leçon"
+  },
+  "76": {
+    "caption": "Repère visuel : le passeport"
+  },
+  "77": {
+    "caption": "Repère visuel : la phrase"
+  },
+  "78": {
+    "caption": "Repère visuel : le récit"
+  },
+  "79": {
+    "caption": "Repère visuel : le côté"
+  },
+  "80": {
+    "caption": "Repère visuel : la pièce"
+  },
+  "81": {
+    "caption": "Repère visuel : la conversation"
+  },
+  "82": {
+    "caption": "Repère visuel : le magasin d’alimentation"
+  },
+  "83": {
+    "caption": "Repère visuel : le temps (météo)"
+  },
+  "84": {
+    "caption": "Repère visuel : la route"
+  },
+  "85": {
+    "caption": "Repère visuel : cher (prix)"
+  },
+  "86": {
+    "caption": "Repère visuel : brièvement"
+  },
+  "87": {
+    "caption": "Repère visuel : je"
+  },
+  "88": {
+    "caption": "Repère visuel : tu"
+  },
+  "89": {
+    "caption": "Repère visuel : il"
+  },
+  "90": {
+    "caption": "Repère visuel : nous"
+  },
+  "91": {
+    "caption": "Repère visuel : vous"
+  },
+  "92": {
+    "caption": "Repère visuel : ils / elles"
+  },
+  "93": {
+    "caption": "Repère visuel : mon (masculin)"
+  },
+  "94": {
+    "caption": "Repère visuel : ma (féminin)"
+  },
+  "95": {
+    "caption": "Repère visuel : mon / ma (neutre)"
+  },
+  "96": {
+    "caption": "Repère visuel : ton (masculin)"
+  },
+  "97": {
+    "caption": "Repère visuel : ta (féminin)"
+  },
+  "98": {
+    "caption": "Repère visuel : ton / ta (neutre)"
+  },
+  "99": {
+    "caption": "Repère visuel : son / sa (à lui)"
+  },
+  "100": {
+    "caption": "Repère visuel : son / sa (à elle)"
+  },
+  "101": {
+    "caption": "Repère visuel : notre (masculin)"
+  },
+  "102": {
+    "caption": "Repère visuel : notre (féminin)"
+  },
+  "103": {
+    "caption": "Repère visuel : notre (neutre)"
+  },
+  "104": {
+    "caption": "Repère visuel : votre (masculin)"
+  },
+  "105": {
+    "caption": "Repère visuel : votre (féminin)"
+  },
+  "106": {
+    "caption": "Repère visuel : leur"
+  },
+  "107": {
+    "caption": "Repère visuel : la voiture"
+  },
+  "108": {
+    "caption": "Repère visuel : où (lieu)"
+  },
+  "109": {
+    "caption": "Repère visuel : la playlist"
+  },
+  "110": {
+    "caption": "Repère visuel : le billet"
+  },
+  "111": {
+    "caption": "Repère visuel : le concert"
+  },
+  "112": {
+    "caption": "Repère visuel : la chanson"
+  },
+  "113": {
+    "caption": "Repère visuel : les amis"
+  },
+  "114": {
+    "caption": "Repère visuel : un salon de café (spécialisé dans le café)"
+  },
+  "115": {
+    "caption": "Repère visuel : le café à boire (boisson)"
+  },
+  "116": {
+    "caption": "Repère visuel : nouveau"
+  },
+  "117": {
+    "caption": "Repère visuel : déjà"
+  },
+  "118": {
+    "caption": "Repère visuel : la pluie"
+  },
+  "119": {
+    "caption": "Repère visuel : le vent"
+  },
+  "120": {
+    "caption": "Repère visuel : la rue"
+  },
+  "121": {
+    "caption": "Repère visuel : vendredi"
+  },
+  "122": {
+    "caption": "Repère visuel : le soir, la soirée"
+  },
+  "123": {
+    "caption": "Repère visuel : le thé"
+  },
+  "124": {
+    "caption": "Repère visuel : la musique"
+  },
+  "125": {
+    "caption": "Repère visuel : le téléphone"
+  },
+  "126": {
+    "caption": "Repère visuel : la France"
+  },
+  "127": {
+    "caption": "Repère visuel : la langue"
+  },
+  "128": {
+    "caption": "Repère visuel : le cinéma"
+  },
+  "129": {
+    "caption": "Repère visuel : le football"
+  },
+  "130": {
+    "caption": "Repère visuel : un café / petit restaurant (lieu)"
+  },
+  "131": {
+    "caption": "Repère visuel : habiter, vivre"
+  },
+  "132": {
+    "caption": "Repère visuel : travailler"
+  },
+  "133": {
+    "caption": "Repère visuel : apprendre, étudier"
+  },
+  "134": {
+    "caption": "Repère visuel : écouter"
+  },
+  "135": {
+    "caption": "Repère visuel : regarder"
+  },
+  "136": {
+    "caption": "Repère visuel : aimer"
+  },
+  "137": {
+    "caption": "Repère visuel : vouloir"
+  },
+  "138": {
+    "caption": "Repère visuel : se promener"
+  },
+  "139": {
+    "caption": "Repère visuel : téléphoner, appeler"
+  },
+  "140": {
+    "caption": "Repère visuel : faire"
+  },
+  "141": {
+    "caption": "Repère visuel : boire"
+  },
+  "142": {
+    "caption": "Repère visuel : aller (à pied)"
+  },
+  "143": {
+    "caption": "Repère visuel : aujourd’hui"
+  },
+  "144": {
+    "caption": "Repère visuel : à la maison"
+  },
+  "145": {
+    "caption": "Repère visuel : aussi"
+  },
+  "146": {
+    "caption": "Repère visuel : pourquoi"
+  },
+  "147": {
+    "caption": "Repère visuel : excellent, super"
+  },
+  "148": {
+    "caption": "Repère visuel : bien"
+  },
+  "149": {
+    "caption": "Repère visuel : libre, disponible (masculin)"
+  },
+  "150": {
+    "caption": "Repère visuel : Salut !"
+  },
+  "151": {
+    "caption": "Repère visuel : Comment ça va ?"
+  },
+  "152": {
+    "caption": "Repère visuel : Tout va bien."
+  },
+  "153": {
+    "caption": "Repère visuel : Qu’est-ce que tu fais ?"
+  },
+  "154": {
+    "caption": "Repère visuel : À bientôt !"
+  },
+  "155": {
+    "caption": "Repère visuel : Je veux me promener."
+  },
+  "156": {
+    "caption": "Repère visuel : J’aime le café."
+  },
+  "157": {
+    "caption": "Repère visuel : J’ai un parapluie."
+  },
+  "158": {
+    "caption": "Repère visuel : Il pleut dehors."
+  },
+  "159": {
+    "caption": "Repère visuel : la mère"
+  },
+  "160": {
+    "caption": "Repère visuel : la baleine"
+  },
+  "161": {
+    "caption": "Repère visuel : très"
+  },
+  "162": {
+    "caption": "Repère visuel : la sœur"
+  },
+  "163": {
+    "caption": "Repère visuel : l’homme"
+  },
+  "164": {
+    "caption": "Repère visuel : oui"
+  },
+  "165": {
+    "caption": "Repère visuel : être"
+  },
+  "166": {
+    "caption": "Repère visuel : avoir (verbe ; possession courante : у … есть)"
+  },
+  "167": {
+    "caption": "Repère visuel : la chaise"
+  },
+  "168": {
+    "caption": "Repère visuel : les livres"
+  },
+  "169": {
+    "caption": "Repère visuel : mes (pluriel)"
+  },
+  "170": {
+    "caption": "Repère visuel : tes (pluriel)"
+  },
+  "171": {
+    "caption": "Repère visuel : nos (pluriel)"
+  },
+  "172": {
+    "caption": "Repère visuel : votre (neutre)"
+  },
+  "173": {
+    "caption": "Repère visuel : vos (pluriel)"
+  },
+  "174": {
+    "caption": "Repère visuel : ma chaise"
+  },
+  "175": {
+    "caption": "Repère visuel : mon sac"
+  },
+  "176": {
+    "caption": "Repère visuel : ma fenêtre"
+  },
+  "177": {
+    "caption": "Repère visuel : mes livres"
+  },
+  "178": {
+    "caption": "Repère visuel : ta chaise"
+  },
+  "179": {
+    "caption": "Repère visuel : ton sac"
+  },
+  "180": {
+    "caption": "Repère visuel : ta fenêtre"
+  },
+  "181": {
+    "caption": "Repère visuel : tes livres"
+  },
+  "182": {
+    "caption": "Repère visuel : notre chaise"
+  },
+  "183": {
+    "caption": "Repère visuel : notre sac"
+  },
+  "184": {
+    "caption": "Repère visuel : notre fenêtre"
+  },
+  "185": {
+    "caption": "Repère visuel : nos livres"
+  },
+  "186": {
+    "caption": "Repère visuel : votre chaise"
+  },
+  "187": {
+    "caption": "Repère visuel : votre sac"
+  },
+  "188": {
+    "caption": "Repère visuel : votre fenêtre"
+  },
+  "189": {
+    "caption": "Repère visuel : vos livres"
+  },
+  "190": {
+    "caption": "Repère visuel : sa chaise (à lui)"
+  },
+  "191": {
+    "caption": "Repère visuel : son sac (à lui)"
+  },
+  "192": {
+    "caption": "Repère visuel : sa fenêtre (à lui)"
+  },
+  "193": {
+    "caption": "Repère visuel : ses livres (à lui)"
+  },
+  "194": {
+    "caption": "Repère visuel : sa chaise (à elle)"
+  },
+  "195": {
+    "caption": "Repère visuel : son sac (à elle)"
+  },
+  "196": {
+    "caption": "Repère visuel : sa fenêtre (à elle)"
+  },
+  "197": {
+    "caption": "Repère visuel : ses livres (à elle)"
+  },
+  "198": {
+    "caption": "Repère visuel : leur chaise"
+  },
+  "199": {
+    "caption": "Repère visuel : leur sac"
+  },
+  "200": {
+    "caption": "Repère visuel : leur fenêtre"
+  },
+  "201": {
+    "caption": "Repère visuel : leurs livres"
+  },
+  "202": {
+    "caption": "Repère visuel : C’est ma maison."
+  },
+  "203": {
+    "caption": "Repère visuel : C’est une photo."
+  },
+  "204": {
+    "caption": "Repère visuel : Il est à la maison."
+  },
+  "205": {
+    "caption": "Repère visuel : Elle est à Moscou."
+  },
+  "206": {
+    "caption": "Repère visuel : Elle est à la maison."
+  },
+  "207": {
+    "caption": "Repère visuel : C’est un nouveau gilet."
+  },
+  "208": {
+    "caption": "Repère visuel : C’est Moscou."
+  },
+  "209": {
+    "caption": "Repère visuel : Maman est à la maison."
+  },
+  "210": {
+    "caption": "Repère visuel : Ici, il y a une fenêtre."
+  },
+  "211": {
+    "caption": "Repère visuel : La banque est là-bas."
+  },
+  "212": {
+    "caption": "Repère visuel : C’est ma chambre."
+  },
+  "213": {
+    "caption": "Repère visuel : Là-bas, il y a une fontaine."
+  },
+  "214": {
+    "caption": "Repère visuel : Ma maman est à la maison."
+  },
+  "215": {
+    "caption": "Repère visuel : Là-bas, il y a un jardin."
+  },
+  "216": {
+    "caption": "Repère visuel : Je suis professeur."
+  },
+  "217": {
+    "caption": "Repère visuel : Nous sommes à la maison."
+  },
+  "218": {
+    "caption": "Repère visuel : Je suis à la maison."
+  },
+  "219": {
+    "caption": "Repère visuel : Tu es prêt ? (à un homme)"
+  },
+  "220": {
+    "caption": "Repère visuel : Il est expert."
+  },
+  "221": {
+    "caption": "Repère visuel : Nous sommes au bureau."
+  },
+  "222": {
+    "caption": "Repère visuel : Vous êtes ici ?"
+  },
+  "223": {
+    "caption": "Repère visuel : Ils sont amis."
+  },
+  "224": {
+    "caption": "Repère visuel : Je suis étudiant. (homme)"
+  },
+  "225": {
+    "caption": "Repère visuel : J’ai un frère."
+  },
+  "226": {
+    "caption": "Repère visuel : Tu as un parapluie."
+  },
+  "227": {
+    "caption": "Repère visuel : Il a un passeport."
+  },
+  "228": {
+    "caption": "Repère visuel : Elle a une photo."
+  },
+  "229": {
+    "caption": "Repère visuel : Nous avons un parapluie."
+  },
+  "230": {
+    "caption": "Repère visuel : Nous avons deux maisons."
+  },
+  "231": {
+    "caption": "Repère visuel : J’ai une photo."
+  },
+  "232": {
+    "caption": "Repère visuel : J’ai un projet."
+  },
+  "233": {
+    "caption": "Repère visuel : Tu as du temps ?"
+  },
+  "234": {
+    "caption": "Repère visuel : Il a une voiture."
+  },
+  "235": {
+    "caption": "Repère visuel : Elle a une idée."
+  },
+  "236": {
+    "caption": "Repère visuel : Nous avons une solution."
+  },
+  "237": {
+    "caption": "Repère visuel : Vous avez une question ?"
+  },
+  "238": {
+    "caption": "Repère visuel : Ils ont de l’expérience."
+  },
+  "239": {
+    "caption": "Repère visuel : J’ai un livre."
+  },
+  "240": {
+    "caption": "Repère visuel : C’est de l’eau."
+  },
+  "241": {
+    "caption": "Repère visuel : C’est un vase."
+  },
+  "242": {
+    "caption": "Repère visuel : Elle est là-bas."
+  },
+  "243": {
+    "caption": "Repère visuel : Elle est seule."
+  },
+  "244": {
+    "caption": "Repère visuel : C’est un sac."
+  },
+  "245": {
+    "caption": "Repère visuel : C’est un parapluie."
+  },
+  "246": {
+    "caption": "Repère visuel : Voici une photo."
+  },
+  "247": {
+    "caption": "Repère visuel : ce poème"
+  },
+  "248": {
+    "caption": "Repère visuel : ce poète"
+  },
+  "249": {
+    "caption": "Repère visuel : deux amis"
+  },
+  "250": {
+    "caption": "Repère visuel : deux frères"
+  },
+  "251": {
+    "caption": "Repère visuel : deux leçons"
+  },
+  "252": {
+    "caption": "Repère visuel : deux fois"
+  },
+  "253": {
+    "caption": "Repère visuel : deux maisons"
+  },
+  "254": {
+    "caption": "Repère visuel : deux ans"
+  },
+  "255": {
+    "caption": "Repère visuel : le poème"
+  },
+  "256": {
+    "caption": "Repère visuel : c’est pourquoi"
+  },
+  "257": {
+    "caption": "Repère visuel : l’étape"
+  },
+  "258": {
+    "caption": "Repère visuel : l’examen"
+  },
+  "259": {
+    "caption": "Schéma : dans / à (intérieur) · point orange = personne ou objet"
+  },
+  "260": {
+    "caption": "Schéma : sur / à (surface, activité) · point orange = personne ou objet"
+  },
+  "261": {
+    "caption": "Schéma : près de / chez · point orange = personne ou objet"
+  },
+  "262": {
+    "caption": "Schéma : vers / chez (destination) · point orange = personne ou objet"
+  },
+  "263": {
+    "caption": "Schéma : de (provenance de l’intérieur) · point orange = personne ou objet"
+  },
+  "264": {
+    "caption": "Schéma : de / depuis (point de départ) · point orange = personne ou objet"
+  },
+  "265": {
+    "caption": "Schéma : jusqu’à · point orange = personne ou objet"
+  },
+  "266": {
+    "caption": "Repère visuel : sans"
+  },
+  "267": {
+    "caption": "Repère visuel : pour (destinataire)"
+  },
+  "268": {
+    "caption": "Repère visuel : avec / de (selon le cas)"
+  },
+  "269": {
+    "caption": "Schéma : sous · point orange = personne ou objet"
+  },
+  "270": {
+    "caption": "Schéma : au-dessus de · point orange = personne ou objet"
+  },
+  "271": {
+    "caption": "Schéma : devant / avant · point orange = personne ou objet"
+  },
+  "272": {
+    "caption": "Schéma : derrière / pour (selon le contexte) · point orange = personne ou objet"
+  },
+  "273": {
+    "caption": "Repère visuel : au sujet de / à propos de"
+  },
+  "274": {
+    "caption": "Repère visuel : le long de / selon (selon le contexte)"
+  },
+  "275": {
+    "caption": "Schéma : dans la maison (position) · point orange = personne ou objet"
+  },
+  "276": {
+    "caption": "Schéma : dans la maison (destination) · point orange = personne ou objet"
+  },
+  "277": {
+    "caption": "Schéma : sur la table (position) · point orange = personne ou objet"
+  },
+  "278": {
+    "caption": "Schéma : sur la table (destination) · point orange = personne ou objet"
+  },
+  "279": {
+    "caption": "Schéma : près de la maison · point orange = personne ou objet"
+  },
+  "280": {
+    "caption": "Repère visuel : chez moi"
+  },
+  "281": {
+    "caption": "Schéma : vers la maison · point orange = personne ou objet"
+  },
+  "282": {
+    "caption": "Schéma : de la maison (depuis l’intérieur) · point orange = personne ou objet"
+  },
+  "283": {
+    "caption": "Schéma : depuis la maison (point de départ) · point orange = personne ou objet"
+  },
+  "284": {
+    "caption": "Schéma : jusqu’à la maison · point orange = personne ou objet"
+  },
+  "285": {
+    "caption": "Repère visuel : sans sucre"
+  },
+  "286": {
+    "caption": "Repère visuel : pour un ami"
+  },
+  "287": {
+    "caption": "Repère visuel : avec un ami"
+  },
+  "288": {
+    "caption": "Schéma : de la table (provenance) · point orange = personne ou objet"
+  },
+  "289": {
+    "caption": "Schéma : sous la table (position) · point orange = personne ou objet"
+  },
+  "290": {
+    "caption": "Schéma : sous la table (destination) · point orange = personne ou objet"
+  },
+  "291": {
+    "caption": "Schéma : au-dessus de la table · point orange = personne ou objet"
+  },
+  "292": {
+    "caption": "Schéma : devant la maison · point orange = personne ou objet"
+  },
+  "293": {
+    "caption": "Schéma : derrière la maison (position) · point orange = personne ou objet"
+  },
+  "294": {
+    "caption": "Schéma : derrière la maison (destination) · point orange = personne ou objet"
+  },
+  "295": {
+    "caption": "Repère visuel : au sujet d’un ami"
+  },
+  "296": {
+    "caption": "Repère visuel : le long de la rue"
+  }
+}

@@ -1,0 +1,71 @@
+services:
+  app:
+    image: slovo:local
+    build: .
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp:size=32m,mode=1777
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    mem_limit: 512m
+    cpus: 1.0
+    pids_limit: 100
+    environment:
+      SLOVO_ENV: production
+      SECRET_KEY: ${SECRET_KEY:?Définir SECRET_KEY dans .env}
+      SLOVO_HOSTS: ${SLOVO_DOMAIN:?Définir SLOVO_DOMAIN dans .env}
+      SLOVO_PROXY: "1"
+      ALLOW_REGISTRATION: ${ALLOW_REGISTRATION:-1}
+    volumes:
+      - slovo_data:/data
+      - ./backups:/backups:ro
+    networks:
+      - backend
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen(urllib.request.Request('http://127.0.0.1:8080/health', headers={'Host': '${SLOVO_DOMAIN}'}), timeout=5)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+  backup:
+    image: slovo:local
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp:size=32m,mode=1777
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    mem_limit: 256m
+    pids_limit: 50
+    command: ["python", "scripts/backup_loop.py"]
+    environment:
+      SLOVO_DATA_DIR: /data
+    volumes:
+      - slovo_data:/data:ro
+      - ./backups:/backups
+    depends_on:
+      app:
+        condition: service_healthy
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    environment:
+      SLOVO_DOMAIN: ${SLOVO_DOMAIN}
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    networks:
+      - backend
+    depends_on:
+      app:
+        condition: service_healthy
+networks:
+  backend:
+volumes:
+  slovo_data:
+  caddy_data:
+  caddy_config:

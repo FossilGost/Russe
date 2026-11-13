@@ -1,0 +1,12 @@
+.word-illustration{margin:16px 0;border-radius:18px;overflow:hidden;background:#f2f7fc;border:1px solid #dce6ef;color:#334e68}
+.word-illustration img{display:block;width:100%;height:150px;object-fit:contain}
+.word-illustration figcaption{padding:8px 14px 12px;text-align:center;font-size:14px;line-height:1.4}
+.word-card{content-visibility:auto;contain-intrinsic-size:auto 400px}
+.practice-card>.word-illustration{max-width:460px;margin:16px auto 24px}
+.practice-card>.word-illustration img{height:180px}
+.listening-prompt{text-align:center;padding:20px 0 28px}
+.listening-prompt h1{font-size:clamp(26px,3vw,40px);margin:12px 0 22px}
+.listening-prompt .speech-actions{justify-content:center;flex-wrap:wrap;gap:12px}
+.listening-symbol{font-size:50px;display:block}
+.choices [lang=ru]{font-size:1.25em}
+@media(max-width:650px){.listening-prompt .speech-actions{display:flex}.word-illustration img{height:125px}}

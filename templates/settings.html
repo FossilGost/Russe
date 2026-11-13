@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %}Préférences{% endblock %}
+{% block content %}
+<div class="page-heading"><div><p class="eyebrow">À TA FAÇON</p><h1>Ton russe, ton rythme.</h1><p>Un espace qui s’adapte à tes habitudes.</p></div></div>
+<div class="settings-layout">
+  <form class="panel settings-form" method="post" id="settings-form" data-autosave="1">
+    <input type="hidden" name="csrf" value="{{ csrf_token }}">
+    <h2>Mon entraînement</h2>
+    <p id="settings-save-status" class="autosave-status" role="status" aria-live="polite">✓ Les changements sont appliqués et enregistrés automatiquement.</p>
+    <button type="button" class="button outline" id="settings-retry" hidden>Réessayer la synchronisation</button>
+    <label for="name">Mon prénom ou pseudo</label>
+    <input id="name" name="name" value="{{ profile.name }}" maxlength="40" required>
+    <label for="goal">Mon objectif quotidien</label>
+    <select id="goal" name="goal">{% for value,label in [(30,'Tranquille · 30 XP'),(50,'Régulier · 50 XP'),(100,'Motivé · 100 XP'),(150,'Passionné · 150 XP')] %}<option value="{{ value }}" {{ 'selected' if profile.goal==value }}>{{ label }}</option>{% endfor %}</select>
+    <label for="length">Questions par session</label>
+    <select id="length" name="length">{% for value in [5,10,15,20] %}<option value="{{ value }}" {{ 'selected' if profile.length==value }}>{{ value }} questions</option>{% endfor %}</select>
+    <label class="toggle-row"><div><strong>Distinguer е et ё</strong><small>Pour travailler l’orthographe plus précisément.</small></div><input type="checkbox" name="strict" {{ 'checked' if profile.strict }}></label>
+    <label class="toggle-row"><div><strong>Effets sonores</strong><small>Une mélodie de réussite, des bonus de série et un son bref en cas d’erreur.</small></div><input type="checkbox" name="sound" {{ 'checked' if profile.sound }}></label>
+    {% include 'appearance.html' %}
+    <noscript><p>Active JavaScript pour appliquer les réglages automatiquement.</p><button class="button primary">Appliquer mes préférences</button></noscript>
+  </form>
+  <div>
+    <section class="panel"><h2>Comment ça marche ?</h2><ul class="explain-list"><li><strong>10 ou 15 XP</strong> par bonne réponse, selon l’exercice.</li><li><strong>Bonus de série :</strong> +2 XP par bonne réponse consécutive, jusqu’à +10 XP.</li><li><strong>Un niveau tous les 250 XP.</strong> Tu avances à chaque session.</li><li><strong>3 réussites consécutives</strong> pour maîtriser un mot.</li><li><strong>Révisions espacées :</strong> une erreur revient immédiatement ; les réussites espacent les rencontres à 1, 3, 7, 14 puis 30 jours.</li></ul></section>
+    <section class="panel privacy-panel"><h2>Ton compte : {{ account.username }}</h2><p>Ta progression, tes favoris, tes cours terminés et tes réglages sont sauvegardés sur le serveur. Connecte-toi avec le même compte pour les retrouver sur un autre appareil.</p><a href="{{ url_for('export') }}" class="text-button">Exporter mes données en JSON ↓</a><p class="tiny">Cet export contient uniquement tes données d’apprentissage, sans ton mot de passe. La synthèse vocale naturelle utilise un service en ligne.</p></section>
+    <section class="panel account-panel"><h2>Changer mon mot de passe</h2><form method="post" action="{{ url_for('change_password') }}"><input type="hidden" name="csrf" value="{{ csrf_token }}"><label for="current-password">Mot de passe actuel</label><input id="current-password" type="password" name="current_password" autocomplete="current-password" maxlength="128" required><label for="new-password">Nouveau mot de passe</label><input id="new-password" type="password" name="password" autocomplete="new-password" minlength="15" maxlength="128" required><label for="confirm-password">Confirmer le nouveau mot de passe</label><input id="confirm-password" type="password" name="confirmation" autocomplete="new-password" minlength="15" maxlength="128" required><button class="button primary">Modifier mon mot de passe</button></form></section>
+  </div>
+</div>
+<section class="panel sources-panel" id="sources"><p class="eyebrow">LE CONTENU DE TON COURS</p><h2>Des sources que tu connais.</h2><p>{{ total_words }} mots et expressions sélectionnés depuis tes fiches et les compléments pédagogiques demandés. Les fiches proviennent du dossier indiqué dans <code>Sources.txt</code>. Chaque entrée du carnet indique sa source.</p><ul>{% for source in sources.values() %}<li>{{ source }}</li>{% endfor %}</ul><div class="source-excluded">✓ Le manuel « Tome 1, Cours » est exclu. Les images et le brouillon Word ne sont pas importés automatiquement.</div><p class="tiny">Les fiches restent inchangées. Pour enrichir le catalogue, ajoute des entrées vérifiées dans <code>data/build_vocabulary.py</code>, puis régénère le fichier JSON. Les traductions précisent les formes grammaticales pour éviter les réponses ambiguës.</p></section>
+{% endblock %}

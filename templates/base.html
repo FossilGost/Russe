@@ -1,0 +1,61 @@
+﻿<!doctype html>
+<html lang="fr" data-theme="{{ profile.theme }}">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#28614c"><meta name="description" content="Ton petit rituel pour apprendre le russe. Révise tes mots, relève des défis et progresse à ton rythme.">
+  <title>{% block title %}Ton espace russe{% endblock %} · Slovo</title>
+  <link rel="icon" href="{{ url_for('static',filename='mascot.svg') }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='themes.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='practice.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='comfort.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='courses.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='accounts.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='illustrations.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='learning.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='motion.css') }}">
+  <meta name="csrf-token" content="{{ csrf_token }}">
+  <script src="{{ url_for('static',filename='session.js') }}" defer></script>
+  {% if account %}
+  <script src="{{ url_for('static',filename='preferences.js') }}" defer></script>
+  <script src="{{ url_for('static',filename='app.js') }}" defer></script>
+  <script src="{{ url_for('static',filename='volume.js') }}" defer></script>
+  {% endif %}
+  {% if request.endpoint in ('practice','answer','next_question') %}
+  <script src="{{ url_for('static',filename='feedback.js') }}" defer></script>
+  <script src="{{ url_for('static',filename='writing.js') }}" defer></script>
+  {% endif %}
+  {% if request.endpoint in ('practice','answer','next_question','vocabulary','alphabet','course','preferences') %}
+  <script src="{{ url_for('static',filename='speech.js') }}" defer></script>
+  {% endif %}
+</head>
+<body data-user-id="{{ account.id if account else '' }}" data-volume="{{ profile.volume }}" data-keyboard-open="{{ profile.keyboard_open }}" data-interface-url="{{ url_for('save_interface') if account else '' }}" data-sound="{{ profile.sound }}" data-voice="{{ profile.voice }}" data-speech-rate="{{ profile.speech_rate }}" data-browser-voice="{{ profile.browser_voice }}">
+<a href="#main" class="skip">Aller au contenu</a>
+<aside class="sidebar">
+  <a class="brand" href="{{ url_for('home') }}"><span class="brand-mark">с</span> slovo<span class="brand-dot">.</span></a>
+  <p class="brand-caption">UN PETIT MOT, UN GRAND PAS.</p>
+  <nav aria-label="Navigation principale">
+    {% if account %}
+    {% for endpoint, icon, label in [('home','◈','Mon parcours'),('courses','▥','Cours'),('vocabulary','▤','Mes mots'),('alphabet','А','L’alphabet'),('progress','↗','Ma progression')] %}
+    <a href="{{ url_for(endpoint) }}" class="nav-link {{ 'active' if request.endpoint==endpoint or (endpoint=='courses' and request.endpoint=='course') else '' }}" {% if request.endpoint==endpoint or (endpoint=='courses' and request.endpoint=='course') %}aria-current="page"{% endif %}><span class="nav-icon">{{ icon }}</span>{{ label }}{% if endpoint=='vocabulary' %}<small>{{ total_words }}</small>{% endif %}</a>
+    {% endfor %}
+    {% else %}<a class="nav-link" href="{{ url_for('login') }}">Me connecter</a>{% if allow_registration %}<a class="nav-link" href="{{ url_for('register') }}">Créer mon compte</a>{% endif %}{% endif %}
+  </nav>
+  <div class="sidebar-bottom">
+    <div class="sidebar-tip"><span class="tip-star">✦</span><strong>La régularité fait la différence.</strong><p>Quelques mots chaque jour, et le russe devient familier.</p><span class="tiny">Ты можешь! · Tu peux le faire !</span></div>
+    {% if account %}<a class="nav-link {{ 'active' if request.endpoint=='preferences' else '' }}" href="{{ url_for('preferences') }}"><span class="nav-icon">⚙</span>Préférences</a>
+    <form method="post" action="{{ url_for('logout') }}"><input type="hidden" name="csrf" value="{{ csrf_token }}"><button class="button logout-button">Se déconnecter</button></form>{% endif %}
+    <div class="profile"><span class="avatar">{{ profile.name[0]|upper }}</span><div><strong>{{ profile.name }}</strong><small>Apprenti · Niveau {{ stats.level }}</small></div><span class="online-dot"></span></div>
+  </div>
+</aside>
+<div class="workspace">
+  <header class="topbar"><span><span class="flag">🇷🇺</span> Russe <span class="muted">/</span> <span class="tiny">Niveau débutant</span></span><div class="volume-control"><label for="app-volume">Volume</label><input id="app-volume" type="range" min="0" max="100" step="1" value="100" aria-label="Volume des voix et des effets sonores"><output id="volume-value" for="app-volume">100 %</output></div>{% include 'top_stats.html' %}{% if account %}<form class="header-logout" method="post" action="{{ url_for('logout') }}"><input type="hidden" name="csrf" value="{{ csrf_token }}"><button class="button logout-button" type="submit"><span aria-hidden="true">&#8618;</span> Se d&eacute;connecter</button></form>{% endif %}</header>
+  <main id="main" tabindex="-1">
+    {% for message in get_flashed_messages() %}<div class="toast" role="status">{{ message }}</div>{% endfor %}
+    {% block content %}{% endblock %}
+  </main>
+  <footer>Fait pour tes petits progrès, chaque jour. <a href="{{ url_for('static',filename='illustrations/CREDITS.md') }}">Illustrations : Twemoji · CC BY 4.0</a><span>слово = le mot</span></footer>
+</div>
+</body>
+</html>
+
